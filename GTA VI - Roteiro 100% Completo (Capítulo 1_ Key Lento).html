@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTA VI - Roteiro 100% Completo (PT-BR) | Capítulo 1: Key Lento</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilo Base e Tema Vice City / Leonida */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0618;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(255, 42, 133, 0.22) 0%, transparent 55%),
+        radial-gradient(circle at 15% 20%, rgba(0, 240, 255, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.18) 0%, transparent 50%),
+        linear-gradient(180deg, #130826 0%, #090c1a 55%, #060811 100%);
+      background-attachment: fixed;
+      color: #f8fafc;
+      min-height: 100vh;
+    }
+
+    .font-display {
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.03em;
+    }
+
+    /* Efeitos Neon */
+    .neon-title-pink {
+      color: #fff;
+      text-shadow:
+        0 0 6px rgba(255, 77, 166, 0.9),
+        0 0 18px rgba(255, 0, 128, 0.75),
+        0 0 35px rgba(255, 0, 128, 0.45);
+    }
+
+    .neon-title-cyan {
+      color: #67e8f9;
+      text-shadow:
+        0 0 8px rgba(34, 211, 238, 0.7),
+        0 0 20px rgba(6, 182, 212, 0.4);
+    }
+
+    .vice-card {
+      background: rgba(17, 19, 36, 0.76);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    /* Checkbox Customizado Estilo Neon */
+    .custom-checkbox {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 1.35rem;
+      height: 1.35rem;
+      min-width: 1.35rem;
+      border-radius: 0.375rem;
+      border: 2px solid #22d3ee;
+      background-color: rgba(15, 23, 42, 0.7);
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 8px rgba(34, 211, 238, 0.2);
+    }
+
+    .custom-checkbox:hover {
+      border-color: #67e8f9;
+      box-shadow: 0 0 12px rgba(34, 211, 238, 0.45);
+    }
+
+    .custom-checkbox:checked {
+      background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);
+      border-color: #f472b6;
+      box-shadow: 0 0 12px rgba(236, 72, 153, 0.65);
+    }
+
+    .custom-checkbox:checked::before {
+      content: "";
+      width: 0.75rem;
+      height: 0.75rem;
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+      background-color: #ffffff;
+    }
+
+    /* Scrollbar personalizada */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0b0618;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ec4899;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-pink-500 selection:text-white pb-12">
+
+  <!-- Silhueta Decorativa de Palmeiras e Pôr do Sol no Topo -->
+  <div class="relative overflow-hidden border-b border-pink-500/20">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 pt-7 pb-6 relative z-10">
+      
+      <!-- Cabeçalho Principal -->
+      <header class="text-center mb-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/15 border border-pink-500/30 text-pink-300 text-xs font-semibold uppercase tracking-wider mb-2">
+          <span class="w-2 h-2 rounded-full bg-pink-400 animate-pulse"></span>
+          Checklist Interativo &bull; Progresso Salvo Automaticamente
+        </div>
+        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl font-bold uppercase tracking-wide neon-title-pink leading-tight">
+          GTA VI - ROTEIRO 100% COMPLETO (PT-BR)
+        </h1>
+        <h2 class="font-display text-xl sm:text-3xl font-bold uppercase mt-1 tracking-wider">
+          <span class="neon-title-cyan">CAPÍTULO 1:</span> 
+          <span class="text-pink-300 drop-shadow-[0_0_10px_rgba(244,114,182,0.7)]">KEY LENTO</span>
+        </h2>
+      </header>
+
+      <!-- Painel de Progresso Geral & Controles -->
+      <div class="vice-card rounded-2xl p-4 sm:p-5 max-w-6xl mx-auto">
+        <!-- Barra de Progresso Global -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+          <div class="flex items-center gap-2.5">
+            <span class="text-sm sm:text-base font-semibold text-slate-200">Progresso Total do Capítulo 1</span>
+            <span id="badge-complete" class="hidden px-2.5 py-0.5 text-xs font-bold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+              100% CONCLUÍDO!
+            </span>
+          </div>
+          <div class="flex items-baseline gap-2">
+            <span id="global-count" class="text-sm text-cyan-300 font-medium">0 / 0 concluídos</span>
+            <span id="global-percent" class="font-display text-2xl sm:text-3xl font-bold text-pink-400">0%</span>
+          </div>
+        </div>
+
+        <div class="w-full h-3.5 bg-slate-900/90 rounded-full overflow-hidden p-0.5 border border-slate-700/70 mb-5">
+          <div id="global-progress-bar" class="h-full rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 transition-all duration-500 ease-out shadow-[0_0_12px_rgba(236,72,153,0.7)]" style="width: 0%"></div>
+        </div>
+
+        <!-- Barra de Ferramentas: Busca, Filtros e Ações -->
+        <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
+          
+          <!-- Busca e Filtros -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 flex-1">
+            <!-- Campo de Busca -->
+            <div class="relative flex-1 max-w-md">
+              <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+              <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Buscar missão, veículo, colecionável..." 
+                class="w-full pl-10 pr-8 py-2 bg-slate-900/80 border border-slate-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-xl text-sm text-slate-100 placeholder-slate-400 outline-none transition"
+              />
+              <button id="clear-search" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white p-1" title="Limpar busca">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              </button>
+            </div>
+
+            <!-- Botões de Filtro -->
+            <div class="inline-flex rounded-xl bg-slate-900/80 p-1 border border-slate-700/80 self-start sm:self-auto" role="group">
+              <button data-filter="all" class="filter-btn active px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+                Todos
+              </button>
+              <button data-filter="pending" class="filter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-slate-200 transition border border-transparent">
+                Pendentes
+              </button>
+              <button data-filter="completed" class="filter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-slate-200 transition border border-transparent">
+                Concluídos
+              </button>
+            </div>
+          </div>
+
+          <!-- Botões de Backup e Reset -->
+          <div class="flex flex-wrap items-center gap-2">
+            <button id="btn-export" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-cyan-300 border border-cyan-500/30 text-xs sm:text-sm font-medium transition cursor-pointer">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              Exportar JSON
+            </button>
+
+            <label class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-purple-300 border border-purple-500/30 text-xs sm:text-sm font-medium transition cursor-pointer">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+              Importar Backup
+              <input type="file" id="input-import" accept=".json" class="hidden" />
+            </label>
+
+            <button id="btn-reset-modal" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-rose-950/60 hover:bg-rose-900/70 text-rose-300 border border-rose-500/30 text-xs sm:text-sm font-medium transition cursor-pointer">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+              Resetar
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grade Principal das 4 Colunas -->
+  <main class="max-w-[1600px] mx-auto px-4 sm:px-6 mt-6">
+    <div id="columns-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 items-start">
+      <!-- As colunas e seções serão renderizadas dinamicamente via JS -->
+    </div>
+
+    <!-- Mensagem quando a busca/filtro não encontrar resultados -->
+    <div id="empty-state" class="hidden text-center py-16 vice-card rounded-2xl mt-4">
+      <p class="text-lg font-medium text-slate-300">Nenhum item encontrado com os filtros atuais.</p>
+      <button id="btn-clear-filters" class="mt-3 px-4 py-2 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 text-sm font-medium hover:bg-cyan-500/30 transition">
+        Limpar busca e filtros
+      </button>
+    </div>
+  </main>
+
+  <!-- Modal Customizado para Resetar Progresso (Sem usar alert/confirm nativo) -->
+  <div id="reset-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div class="vice-card rounded-2xl max-w-md w-full p-6 border border-pink-500/40 shadow-2xl transform transition-all">
+      <div class="flex items-center gap-3 text-rose-400 mb-3">
+        <div class="p-2.5 rounded-xl bg-rose-500/15 border border-rose-500/30">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold uppercase text-white tracking-wide">Resetar Progresso</h3>
+      </div>
+      <p class="text-sm text-slate-300 leading-relaxed mb-5">
+        Como você deseja redefinir o seu checklist do Capítulo 1?
+      </p>
+      <div class="flex flex-col gap-2.5">
+        <button id="confirm-reset-zero" class="w-full py-2.5 px-4 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-semibold text-sm transition cursor-pointer shadow-lg shadow-rose-600/25">
+          Zerar Tudo (0% - Nenhum marcado)
+        </button>
+        <button id="confirm-reset-image" class="w-full py-2.5 px-4 rounded-xl bg-purple-600/80 hover:bg-purple-500 text-white font-semibold text-sm transition cursor-pointer border border-purple-400/30">
+          Restaurar Estado Inicial da Imagem (5 marcados)
+        </button>
+        <button id="cancel-reset" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-sm transition cursor-pointer mt-1">
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de Notificação -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 translate-y-20 opacity-0 pointer-events-none transition-all duration-300">
+    <div class="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-slate-900/95 border border-cyan-400/50 text-slate-100 shadow-xl backdrop-blur-md text-sm font-medium">
+      <span id="toast-icon" class="text-cyan-400">✓</span>
+      <span id="toast-msg">Ação concluída!</span>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // DADOS ESTRUTURADOS EXATAMENTE COMO NA IMAGEM (CAPÍTULO 1: KEY LENTO)
+    // =========================================================================
+    const STORAGE_KEY = 'gtavi_cap1_keylento_checklist_v1';
+
+    const CHECKLIST_DATA = [
+      {
+        column: 1,
+        sections: [
+          {
+            id: 'sec-1a',
+            title: 'SEÇÃO 1A: MISSÕES',
+            isMissable: false,
+            items: [
+              { id: '1a-1', text: 'Prólogo', defaultChecked: false },
+              { id: '1a-2', text: 'Fui pescar', defaultChecked: false },
+              { id: '1a-3', text: 'Prepare-se', defaultChecked: false },
+              { id: '1a-4', text: 'Apenas um arranhão', defaultChecked: false },
+              { id: '1a-5', text: 'Taxas de laboratório', defaultChecked: false },
+              { id: '1a-6', text: 'Atenção indesejada', defaultChecked: false },
+              { id: '1a-7', text: 'Tubulação', defaultChecked: false },
+              { id: '1a-8', text: 'Ei, Arnold! (Fazer Save Antes)', defaultChecked: false, highlightSave: true },
+              { id: '1a-9', text: 'Sonhos na Ilha', defaultChecked: false },
+              { id: '1a-10', text: 'Feng Shui', defaultChecked: false }
+            ]
+          },
+          {
+            id: 'sec-1b',
+            title: 'SEÇÃO 1B: TAREFAS PERDÍVEIS (FAZER ANTES DA LUCIA)',
+            isMissable: true,
+            items: [
+              { id: '1b-1', text: 'Compre o rum da Shirley', defaultChecked: false },
+              { id: '1b-2', text: 'Roube a scooter da Shirley', defaultChecked: false },
+              { id: '1b-3', text: 'Reformar a casa de Jason (arte + estrutura)', defaultChecked: false },
+              { id: '1b-4', text: 'Comprar presentes para Lucia (colar + flores)', defaultChecked: false },
+              { id: '1b-5', text: 'Mudar visual de Jason (cabelo + roupa)', defaultChecked: false },
+              { id: '1b-6', text: 'Reabastecer despensa', defaultChecked: false }
+            ]
+          }
+        ]
+      },
+      {
+        column: 2,
+        sections: [
+          {
+            id: 'sec-2a',
+            title: 'SEÇÃO 2A: DADOS DO MAPA & ATIVIDADES',
+            isMissable: false,
+            items: [
+              { id: '2a-1', text: 'Desbravar 100% do mapa de Key Lento', defaultChecked: true },
+              { id: '2a-2', text: 'Local de Meditação 1/5 (Casa Jason)', defaultChecked: true },
+              { id: '2a-3', text: 'Local de Meditação 2/5 (Mirante Sul)', defaultChecked: false },
+              { id: '2a-4', text: 'Desafio de Pesca com Cal (Vencer)', defaultChecked: false },
+              { id: '2a-5', text: '1ª Entrega de Veículo para Moses', defaultChecked: false },
+              { id: '2a-6', text: 'Usar o WAiNK IT 1/100 (Local 1)', defaultChecked: true },
+              { id: '2a-7', text: 'Visitar Bar da Marina', defaultChecked: false }
+            ]
+          },
+          {
+            id: 'sec-2b',
+            title: 'SEÇÃO 2B: COLECIONÁVEIS DE KEY LENTO',
+            isMissable: false,
+            items: [
+              { id: '2b-1', text: 'Carta 1/18 (Doca Norte)', defaultChecked: false },
+              { id: '2b-2', text: 'Carta 2/18 (Loja de Iscas)', defaultChecked: false },
+              { id: '2b-3', text: 'Carta 3/18 (Farol Velho)', defaultChecked: false },
+              { id: '2b-4', text: 'Flamingo 1/125 (Quintal Jason)', defaultChecked: false },
+              { id: '2b-5', text: 'Flamingo 2/125 (Praia Pequena)', defaultChecked: false },
+              { id: '2b-6', text: 'Flamingo 3/125 (Telhado Motel)', defaultChecked: false },
+              { id: '2b-7', text: 'Salto Acrobático 1/250 (Ponte Quebrada)', defaultChecked: false },
+              { id: '2b-8', text: 'Salto Acrobático 2/250 (Rampa de Terra)', defaultChecked: false }
+            ]
+          }
+        ]
+      },
+      {
+        column: 3,
+        sections: [
+          {
+            id: 'sec-3a',
+            title: 'SEÇÃO 3A: CATALOGAR VEÍCULOS (AUTOS ACHADOS X/100)',
+            isMissable: false,
+            items: [
+              { id: '3a-1', text: 'Dinka Blista', defaultChecked: true },
+              { id: '3a-2', text: 'Vapid Peyote Gasser', defaultChecked: false },
+              { id: '3a-3', text: 'Declasse Tulip M-100', defaultChecked: false },
+              { id: '3a-4', text: 'Karin Futo GTX', defaultChecked: false },
+              { id: '3a-5', text: 'Western Daemon', defaultChecked: false },
+              { id: '3a-6', text: 'Imponte Ruiner ZZ-8', defaultChecked: false },
+              { id: '3a-7', text: 'Annis Hellion', defaultChecked: false },
+              { id: '3a-8', text: 'Pfister Comet S2 Cabrio', defaultChecked: false },
+              { id: '3a-9', text: 'Bravado Buffalo STX', defaultChecked: false },
+              { id: '3a-10', text: 'Obey 8F Drafter', defaultChecked: false },
+              { id: '3a-11', text: 'Pegassi Torero XO', defaultChecked: false },
+              { id: '3a-12', text: 'Coil Raiden', defaultChecked: false }
+            ]
+          },
+          {
+            id: 'sec-3b',
+            title: 'SEÇÃO 3B: APP SCOOTER BROS (REGISTRAR X/10)',
+            isMissable: false,
+            items: [
+              { id: '3b-1', text: 'Pegassi Faggio Sport', defaultChecked: true },
+              { id: '3b-2', text: 'Nagasaki Shinobi', defaultChecked: false },
+              { id: '3b-3', text: 'Maibatsu Sanchez', defaultChecked: false },
+              { id: '3b-4', text: 'Shitzu PCJ 600', defaultChecked: false },
+              { id: '3b-5', text: 'Dinka Akuma', defaultChecked: false },
+              { id: '3b-6', text: 'Western Cliffhanger', defaultChecked: false }
+            ]
+          }
+        ]
+      },
+      {
+        column: 4,
+        sections: [
+          {
+            id: 'sec-4a',
+            title: 'SEÇÃO 4A: SERVIÇOS & MARCO FINAL',
+            isMissable: false,
+            items: [
+              { id: '4a-1', text: 'Encontrar o esconderijo do contrabandista (Opcional)', defaultChecked: false },
+              { id: '4a-2', text: 'Ajudar o pescador perdido (Encontro Aleatório)', defaultChecked: false },
+              { id: '4a-3', text: 'Entregar pacote misterioso (Missão Extra)', defaultChecked: false }
+            ]
+          },
+          {
+            id: 'sec-4b',
+            title: 'SEÇÃO 4B: CONCLUSÃO DO CAPÍTULO 1',
+            isMissable: false,
+            items: [
+              { id: '4b-1', text: 'Todos os itens da Seção 1B marcados (PERDÍVEIS)', defaultChecked: false, linkedSections: ['sec-1b'] },
+              { id: '4b-2', text: 'Todos os itens da Seção 2A/2B marcados', defaultChecked: false, linkedSections: ['sec-2a', 'sec-2b'] },
+              { id: '4b-3', text: 'Todos os itens da Seção 3A/3B marcados', defaultChecked: false, linkedSections: ['sec-3a', 'sec-3b'] },
+              { id: '4b-4', text: 'Salvar o progresso (Check final)', defaultChecked: false },
+              { id: '4b-5', text: 'Iniciar missão "Voltando para casa"', defaultChecked: false }
+            ]
+          }
+        ]
+      }
+    ];
+
+    // =========================================================================
+    // ESTADO DA APLICAÇÃO
+    // =========================================================================
+    let checkedState = {};
+    let currentFilter = 'all'; // 'all' | 'pending' | 'completed'
+    let searchQuery = '';
+
+    // Carrega o estado inicial (do localStorage ou padrão da imagem)
+    function loadState() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          checkedState = JSON.parse(saved);
+          return;
+        }
+      } catch (e) {
+        console.error('Erro ao ler localStorage:', e);
+      }
+      // Primeira visita: carregar itens pré-marcados da imagem
+      resetToImageDefaults(false);
+    }
+
+    // Salva o estado no localStorage
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(checkedState));
+      } catch (e) {
+        console.error('Erro ao salvar no localStorage:', e);
+      }
+    }
+
+    // Define os valores padrão conforme a imagem enviada
+    function resetToImageDefaults(shouldRender = true) {
+      checkedState = {};
+      CHECKLIST_DATA.forEach(col => {
+        col.sections.forEach(sec => {
+          sec.items.forEach(item => {
+            checkedState[item.id] = !!item.defaultChecked;
+          });
+        });
+      });
+      saveState();
+      if (shouldRender) {
+        renderChecklist();
+        showToast('Estado inicial da imagem restaurado!');
+      }
+    }
+
+    // Zera todos os itens (0%)
+    function resetAllToZero() {
+      checkedState = {};
+      CHECKLIST_DATA.forEach(col => {
+        col.sections.forEach(sec => {
+          sec.items.forEach(item => {
+            checkedState[item.id] = false;
+          });
+        });
+      });
+      saveState();
+      renderChecklist();
+      showToast('Todo o progresso foi zerado (0%).');
+    }
+
+    // Verifica se uma ou mais seções estão 100% concluídas (para indicadores dinâmicos na Seção 4B)
+    function areSectionsComplete(sectionIds) {
+      return sectionIds.every(secId => {
+        for (const col of CHECKLIST_DATA) {
+          const sec = col.sections.find(s => s.id === secId);
+          if (sec) {
+            return sec.items.every(item => !!checkedState[item.id]);
+          }
+        }
+        return false;
+      });
+    }
+
+    // =========================================================================
+    // RENDERIZAÇÃO E ATUALIZAÇÃO DE PROGRESSO
+    // =========================================================================
+    function renderChecklist() {
+      const grid = document.getElementById('columns-grid');
+      const emptyState = document.getElementById('empty-state');
+      grid.innerHTML = '';
+
+      let totalVisibleItems = 0;
+
+      CHECKLIST_DATA.forEach(colData => {
+        const colEl = document.createElement('div');
+        colEl.className = 'vice-card rounded-2xl p-4 sm:p-5 flex flex-col gap-6 transition-all';
+
+        let colHasVisibleItems = false;
+
+        colData.sections.forEach(section => {
+          // Calcula progresso real da seção (independente do filtro)
+          const secTotal = section.items.length;
+          const secCompleted = section.items.filter(i => !!checkedState[i.id]).length;
+          const secPercent = secTotal > 0 ? Math.round((secCompleted / secTotal) * 100) : 0;
+
+          // Filtra itens conforme busca e filtro ativo
+          const filteredItems = section.items.filter(item => {
+            const isChecked = !!checkedState[item.id];
+            if (currentFilter === 'pending' && isChecked) return false;
+            if (currentFilter === 'completed' && !isChecked) return false;
+            if (searchQuery.trim() !== '') {
+              const q = searchQuery.toLowerCase();
+              const matchText = item.text.toLowerCase().includes(q);
+              const matchSec = section.title.toLowerCase().includes(q);
+              if (!matchText && !matchSec) return false;
+            }
+            return true;
+          });
+
+          if (filteredItems.length === 0) return;
+          colHasVisibleItems = true;
+          totalVisibleItems += filteredItems.length;
+
+          const secEl = document.createElement('section');
+          secEl.className = 'flex flex-col';
+
+          // Cabeçalho da Seção
+          const headerHtml = `
+            <div class="mb-2.5">
+              <div class="flex items-start justify-between gap-2">
+                <h3 class="font-display text-lg sm:text-xl font-bold uppercase tracking-wide leading-snug ${section.isMissable ? 'text-amber-300 drop-shadow-[0_0_8px_rgba(251,191,36,0.4)]' : 'neon-title-cyan'}">
+                  ${section.title}
+                </h3>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-900/90 border border-slate-700/80 text-slate-300 whitespace-nowrap mt-0.5">
+                  ${secCompleted}/${secTotal}
+                </span>
+              </div>
+              
+              ${section.isMissable ? `
+                <div class="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-amber-500/15 border border-amber-500/40 text-amber-300 text-[11px] font-semibold uppercase tracking-wider">
+                  <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                  Atenção: Perdível antes da Lucia
+                </div>
+              ` : ''}
+
+              <!-- Mini barra de progresso da seção -->
+              <div class="w-full h-1.5 bg-slate-900/90 rounded-full overflow-hidden mt-2">
+                <div class="h-full rounded-full transition-all duration-300 ${secPercent === 100 ? 'bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.7)]' : 'bg-gradient-to-r from-cyan-400 to-pink-500'}" style="width: ${secPercent}%"></div>
+              </div>
+            </div>
+          `;
+
+          secEl.innerHTML = headerHtml;
+
+          // Lista de Itens
+          const listEl = document.createElement('ul');
+          listEl.className = 'space-y-1.5';
+
+          filteredItems.forEach(item => {
+            const isChecked = !!checkedState[item.id];
+            const li = document.createElement('li');
+
+            // Indicador dinâmico para os itens de verificação da Seção 4B
+            let linkedBadge = '';
+            if (item.linkedSections) {
+              const allLinkedDone = areSectionsComplete(item.linkedSections);
+              if (allLinkedDone) {
+                linkedBadge = `<span class="ml-auto shrink-0 text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Pronto!</span>`;
+              } else {
+                linkedBadge = `<span class="ml-auto shrink-0 text-[10px] font-medium uppercase px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700">Pendente</span>`;
+              }
+            }
+
+            li.innerHTML = `
+              <label class="group flex items-center gap-3 p-2.5 rounded-xl cursor-pointer transition-all select-none border ${
+                isChecked 
+                  ? 'bg-pink-500/10 border-pink-500/25 hover:bg-pink-500/15' 
+                  : 'bg-slate-900/45 border-transparent hover:bg-slate-800/70 hover:border-cyan-500/30'
+              }">
+                <input 
+                  type="checkbox" 
+                  class="custom-checkbox" 
+                  data-id="${item.id}" 
+                  ${isChecked ? 'checked' : ''}
+                />
+                <span class="text-sm sm:text-[15px] leading-snug transition-all ${
+                  isChecked 
+                    ? 'line-through text-slate-400 decoration-pink-400/70' 
+                    : 'text-slate-100 group-hover:text-white font-medium'
+                }">
+                  ${item.text}
+                </span>
+                ${linkedBadge}
+              </label>
+            `;
+
+            const checkbox = li.querySelector('input[type="checkbox"]');
+            checkbox.addEventListener('change', (e) => {
+              checkedState[item.id] = e.target.checked;
+              saveState();
+              updateGlobalProgress();
+              renderChecklist();
+            });
+
+            listEl.appendChild(li);
+          });
+
+          secEl.appendChild(listEl);
+          colEl.appendChild(secEl);
+        });
+
+        if (colHasVisibleItems) {
+          grid.appendChild(colEl);
+        }
+      });
+
+      // Mostra ou esconde estado vazio
+      if (totalVisibleItems === 0) {
+        grid.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+      } else {
+        grid.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+      }
+
+      updateGlobalProgress();
+    }
+
+    // Atualiza a barra e contadores no topo
+    function updateGlobalProgress() {
+      let total = 0;
+      let completed = 0;
+
+      CHECKLIST_DATA.forEach(col => {
+        col.sections.forEach(sec => {
+          sec.items.forEach(item => {
+            total++;
+            if (checkedState[item.id]) completed++;
+          });
+        });
+      });
+
+      const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+      document.getElementById('global-count').textContent = `${completed} / ${total} concluídos`;
+      document.getElementById('global-percent').textContent = `${percent}%`;
+      document.getElementById('global-progress-bar').style.width = `${percent}%`;
+
+      const badgeComplete = document.getElementById('badge-complete');
+      if (percent === 100) {
+        badgeComplete.classList.remove('hidden');
+      } else {
+        badgeComplete.classList.add('hidden');
+      }
+    }
+
+    // =========================================================================
+    // NOTIFICAÇÕES (TOAST) E UTILITÁRIOS
+    // =========================================================================
+    let toastTimeout;
+    function showToast(message, isError = false) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-msg');
+      const toastIcon = document.getElementById('toast-icon');
+
+      toastMsg.textContent = message;
+      toastIcon.textContent = isError ? '⚠' : '✓';
+      toastIcon.className = isError ? 'text-rose-400 font-bold' : 'text-cyan-400 font-bold';
+
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3200);
+    }
+
+    // Exportar Backup em JSON
+    function exportBackup() {
+      const backupData = {
+        game: 'GTA VI - Capítulo 1: Key Lento',
+        exportedAt: new Date().toISOString(),
+        progress: checkedState
+      };
+      const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `gtavi-cap1-keylento-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Backup JSON exportado com sucesso!');
+    }
+
+    // Importar Backup JSON
+    function importBackup(file) {
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          const importedProgress = parsed.progress || parsed;
+          if (typeof importedProgress !== 'object' || importedProgress === null) {
+            throw new Error('Formato inválido');
+          }
+          // Valida e aplica apenas IDs existentes
+          CHECKLIST_DATA.forEach(col => {
+            col.sections.forEach(sec => {
+              sec.items.forEach(item => {
+                if (item.id in importedProgress) {
+                  checkedState[item.id] = !!importedProgress[item.id];
+                }
+              });
+            });
+          });
+          saveState();
+          renderChecklist();
+          showToast('Progresso restaurado do arquivo de backup!');
+        } catch (err) {
+          showToast('Erro ao importar: arquivo JSON inválido.', true);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    // =========================================================================
+    // EVENT LISTENERS
+    // =========================================================================
+    document.addEventListener('DOMContentLoaded', () => {
+      loadState();
+      renderChecklist();
+
+      // Filtros (Todos, Pendentes, Concluídos)
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('active', 'bg-cyan-500/20', 'text-cyan-300', 'border-cyan-500/40');
+            b.classList.add('text-slate-400', 'border-transparent');
+          });
+          btn.classList.add('active', 'bg-cyan-500/20', 'text-cyan-300', 'border-cyan-500/40');
+          btn.classList.remove('text-slate-400', 'border-transparent');
+
+          currentFilter = btn.dataset.filter;
+          renderChecklist();
+        });
+      });
+
+      // Busca
+      const searchInput = document.getElementById('search-input');
+      const clearSearchBtn = document.getElementById('clear-search');
+
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        clearSearchBtn.classList.toggle('hidden', searchQuery === '');
+        renderChecklist();
+      });
+
+      clearSearchBtn.addEventListener('click', () => {
+        searchQuery = '';
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        renderChecklist();
+      });
+
+      document.getElementById('btn-clear-filters').addEventListener('click', () => {
+        searchQuery = '';
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        currentFilter = 'all';
+        filterBtns.forEach(b => {
+          const isAll = b.dataset.filter === 'all';
+          b.classList.toggle('active', isAll);
+          b.classList.toggle('bg-cyan-500/20', isAll);
+          b.classList.toggle('text-cyan-300', isAll);
+          b.classList.toggle('border-cyan-500/40', isAll);
+          b.classList.toggle('text-slate-400', !isAll);
+          b.classList.toggle('border-transparent', !isAll);
+        });
+        renderChecklist();
+      });
+
+      // Exportar & Importar
+      document.getElementById('btn-export').addEventListener('click', exportBackup);
+      document.getElementById('input-import').addEventListener('change', (e) => {
+        importBackup(e.target.files[0]);
+        e.target.value = '';
+      });
+
+      // Modal de Reset
+      const resetModal = document.getElementById('reset-modal');
+      document.getElementById('btn-reset-modal').addEventListener('click', () => {
+        resetModal.classList.remove('hidden');
+        resetModal.classList.add('flex');
+      });
+
+      const closeModal = () => {
+        resetModal.classList.add('hidden');
+        resetModal.classList.remove('flex');
+      };
+
+      document.getElementById('cancel-reset').addEventListener('click', closeModal);
+      resetModal.addEventListener('click', (e) => {
+        if (e.target === resetModal) closeModal();
+      });
+
+      document.getElementById('confirm-reset-zero').addEventListener('click', () => {
+        resetAllToZero();
+        closeModal();
+      });
+
+      document.getElementById('confirm-reset-image').addEventListener('click', () => {
+        resetToImageDefaults(true);
+        closeModal();
+      });
+    });
+  </script>
+</body>
+</html>
