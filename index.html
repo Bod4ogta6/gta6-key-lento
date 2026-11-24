@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTA VI - Roteiro 100% Completo (PT-BR) | Capítulos 1 a 4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilo Base e Tema Vice City / Leonida */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0618;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(255, 42, 133, 0.22) 0%, transparent 55%),
+        radial-gradient(circle at 15% 20%, rgba(0, 240, 255, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.18) 0%, transparent 50%),
+        linear-gradient(180deg, #130826 0%, #090c1a 55%, #060811 100%);
+      background-attachment: fixed;
+      color: #f8fafc;
+      min-height: 100vh;
+    }
+
+    .font-display {
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.03em;
+    }
+
+    /* Efeitos Neon */
+    .neon-title-pink {
+      color: #fff;
+      text-shadow:
+        0 0 6px rgba(255, 77, 166, 0.9),
+        0 0 18px rgba(255, 0, 128, 0.75),
+        0 0 35px rgba(255, 0, 128, 0.45);
+    }
+
+    .neon-title-cyan {
+      color: #67e8f9;
+      text-shadow:
+        0 0 8px rgba(34, 211, 238, 0.7),
+        0 0 20px rgba(6, 182, 212, 0.4);
+    }
+
+    .vice-card {
+      background: rgba(17, 19, 36, 0.76);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    /* Checkbox Customizado Estilo Neon */
+    .custom-checkbox {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 1.35rem;
+      height: 1.35rem;
+      min-width: 1.35rem;
+      border-radius: 0.375rem;
+      border: 2px solid #22d3ee;
+      background-color: rgba(15, 23, 42, 0.7);
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 8px rgba(34, 211, 238, 0.2);
+    }
+
+    .custom-checkbox:hover {
+      border-color: #67e8f9;
+      box-shadow: 0 0 12px rgba(34, 211, 238, 0.45);
+    }
+
+    .custom-checkbox:checked {
+      background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);
+      border-color: #f472b6;
+      box-shadow: 0 0 12px rgba(236, 72, 153, 0.65);
+    }
+
+    .custom-checkbox:checked::before {
+      content: "";
+      width: 0.75rem;
+      height: 0.75rem;
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+      background-color: #ffffff;
+    }
+
+    /* Scrollbar personalizada */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0b0618;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ec4899;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-pink-500 selection:text-white pb-14">
+
+  <!-- Cabeçalho e Painel de Progresso -->
+  <div class="relative overflow-hidden border-b border-pink-500/20">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 pt-7 pb-6 relative z-10">
+
+      <!-- Cabeçalho Principal -->
+      <header class="text-center mb-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/15 border border-pink-500/30 text-pink-300 text-xs font-semibold uppercase tracking-wider mb-2">
+          <span class="w-2 h-2 rounded-full bg-pink-400 animate-pulse"></span>
+          Checklist Interativo &bull; Progresso Salvo Automaticamente
+        </div>
+        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl font-bold uppercase tracking-wide neon-title-pink leading-tight">
+          GTA VI - ROTEIRO 100% COMPLETO (PT-BR)
+        </h1>
+        <h2 class="font-display text-lg sm:text-2xl font-bold uppercase mt-2 tracking-wider">
+          <span class="neon-title-cyan">CAPÍTULOS 1 A 4:</span>
+          <span class="text-pink-300 drop-shadow-[0_0_10px_rgba(244,114,182,0.7)]">KEY LENTO &bull; VICE CITY &bull; PÂNTANO &bull; PORT GELLHORN</span>
+        </h2>
+      </header>
+
+      <!-- Painel de Progresso Geral, Individual por Capítulo & Controles -->
+      <div class="vice-card rounded-2xl p-4 sm:p-5 max-w-6xl mx-auto">
+        <!-- Barra de Progresso Global -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+          <div class="flex items-center gap-2.5">
+            <span class="text-sm sm:text-base font-semibold text-slate-200">Progresso Total (Capítulos 1 a 4)</span>
+            <span id="badge-complete" class="hidden px-2.5 py-0.5 text-xs font-bold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+              100% CONCLUÍDO!
+            </span>
+          </div>
+          <div class="flex items-baseline gap-2">
+            <span id="global-count" class="text-sm text-cyan-300 font-medium">0 / 0 concluídos</span>
+            <span id="global-percent" class="font-display text-2xl sm:text-3xl font-bold text-pink-400">0%</span>
+          </div>
+        </div>
+
+        <div class="w-full h-3.5 bg-slate-900/90 rounded-full overflow-hidden p-0.5 border border-slate-700/70 mb-4">
+          <div id="global-progress-bar" class="h-full rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 transition-all duration-500 ease-out shadow-[0_0_12px_rgba(236,72,153,0.7)]" style="width: 0%"></div>
+        </div>
+
+        <!-- Cartões Compactos de Progresso Individual de Cada Capítulo -->
+        <div id="chapter-progress-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
+          <!-- Renderizado dinamicamente via JS -->
+        </div>
+
+        <!-- Barra de Ferramentas: Capítulo, Busca, Filtros e Ações -->
+        <div class="flex flex-col gap-3">
+          <!-- Linha 1: Seletor de Capítulo + Filtros de Status -->
+          <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-2.5">
+            <!-- Seletor de Capítulo -->
+            <div class="flex flex-wrap items-center gap-1 rounded-xl bg-slate-900/80 p-1 border border-slate-700/80 self-start" role="group" aria-label="Selecionar Capítulo">
+              <button data-chapter="all" class="chapter-btn active px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition bg-pink-500/25 text-pink-200 border border-pink-500/50 shadow-[0_0_10px_rgba(236,72,153,0.25)]">
+                Todos
+              </button>
+              <button data-chapter="ch1" class="chapter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-slate-200 transition border border-transparent">
+                Cap. 1
+              </button>
+              <button data-chapter="ch2" class="chapter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-slate-200 transition border border-transparent">
+                Cap. 2
+              </button>
+              <button data-chapter="ch3" class="chapter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-slate-200 transition border border-transparent">
+                Cap. 3
+              </button>
+              <button data-chapter="ch4" class="chapter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-slate-200 transition border border-transparent">
+                Cap. 4
+              </button>
+            </div>
+
+            <!-- Botões de Filtro de Status -->
+            <div class="inline-flex rounded-xl bg-slate-900/80 p-1 border border-slate-700/80 self-start lg:self-auto" role="group" aria-label="Filtrar por Status">
+              <button data-filter="all" class="filter-btn active px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+                Todos
+              </button>
+              <button data-filter="pending" class="filter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-slate-200 transition border border-transparent">
+                Pendentes
+              </button>
+              <button data-filter="completed" class="filter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-slate-200 transition border border-transparent">
+                Concluídos
+              </button>
+            </div>
+          </div>
+
+          <!-- Linha 2: Campo de Busca + Botões de Backup e Reset -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+            <!-- Campo de Busca -->
+            <div class="relative flex-1 max-w-md">
+              <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Buscar missão, veículo, colecionável..."
+                class="w-full pl-10 pr-8 py-2 bg-slate-900/80 border border-slate-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-xl text-sm text-slate-100 placeholder-slate-400 outline-none transition"
+              />
+              <button id="clear-search" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white p-1" title="Limpar busca">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              </button>
+            </div>
+
+            <!-- Botões de Backup e Reset -->
+            <div class="flex flex-wrap items-center gap-2">
+              <button id="btn-export" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-cyan-300 border border-cyan-500/30 text-xs sm:text-sm font-medium transition cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Exportar JSON
+              </button>
+
+              <label class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-purple-300 border border-purple-500/30 text-xs sm:text-sm font-medium transition cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                Importar Backup
+                <input type="file" id="input-import" accept=".json" class="hidden" />
+              </label>
+
+              <button id="btn-reset-modal" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-rose-950/60 hover:bg-rose-900/70 text-rose-300 border border-rose-500/30 text-xs sm:text-sm font-medium transition cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                Resetar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Área Principal dos Capítulos em Sequência -->
+  <main class="max-w-[1600px] mx-auto px-4 sm:px-6 mt-6">
+    <div id="chapters-container" class="space-y-10">
+      <!-- Capítulos 1, 2, 3 e 4 serão renderizados dinamicamente via JS -->
+    </div>
+
+    <!-- Mensagem quando a busca/filtro não encontrar resultados -->
+    <div id="empty-state" class="hidden text-center py-16 vice-card rounded-2xl mt-4">
+      <p class="text-lg font-medium text-slate-300">Nenhum item encontrado com os filtros atuais.</p>
+      <button id="btn-clear-filters" class="mt-3 px-4 py-2 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 text-sm font-medium hover:bg-cyan-500/30 transition cursor-pointer">
+        Limpar busca e filtros
+      </button>
+    </div>
+  </main>
+
+  <!-- Modal Customizado para Resetar Progresso (2 Opções + Cancelar) -->
+  <div id="reset-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div class="vice-card rounded-2xl max-w-md w-full p-6 border border-pink-500/40 shadow-2xl transform transition-all">
+      <div class="flex items-center gap-3 text-rose-400 mb-3">
+        <div class="p-2.5 rounded-xl bg-rose-500/15 border border-rose-500/30">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold uppercase text-white tracking-wide">Resetar Progresso</h3>
+      </div>
+      <p class="text-sm text-slate-300 leading-relaxed mb-5">
+        Como você deseja redefinir o seu checklist dos Capítulos 1 a 4?
+      </p>
+      <div class="flex flex-col gap-2.5">
+        <button id="confirm-reset-zero" class="w-full py-2.5 px-4 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-semibold text-sm transition cursor-pointer shadow-lg shadow-rose-600/25">
+          Zerar Tudo (0% - Nenhum marcado)
+        </button>
+        <button id="confirm-reset-image" class="w-full py-2.5 px-4 rounded-xl bg-purple-600/80 hover:bg-purple-500 text-white font-semibold text-sm transition cursor-pointer border border-purple-400/30">
+          Restaurar Estado Inicial das Imagens
+        </button>
+        <button id="cancel-reset" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-sm transition cursor-pointer mt-1">
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de Notificação -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 translate-y-20 opacity-0 pointer-events-none transition-all duration-300">
+    <div class="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-slate-900/95 border border-cyan-400/50 text-slate-100 shadow-xl backdrop-blur-md text-sm font-medium">
+      <span id="toast-icon" class="text-cyan-400">✓</span>
+      <span id="toast-msg">Ação concluída!</span>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // DADOS ESTRUTURADOS DOS 4 CAPÍTULOS NA SEQUÊNCIA EXATA DAS IMAGENS
+    // =========================================================================
+    const STORAGE_KEY = 'gtavi_roteiro_100_cap1_a_4_v1';
+    const LEGACY_KEYS = [
+      'gtavi_cap1_keylento_checklist_v1',
+      'gta6_roteiro_100_v4',
+      'gta6_roteiro_100_v3',
+      'gta6_roteiro_100_v2',
+      'gta6_cap1_key_lento_v1'
+    ];
+
+    const CHAPTERS_DATA = [
+      {
+        id: 'ch1',
+        shortLabel: 'Cap. 1',
+        badgeText: 'Capítulo 01',
+        title: 'CAPÍTULO 1: KEY LENTO',
+        barGradient: 'from-cyan-400 via-purple-500 to-pink-500',
+        columns: [
+          {
+            column: 1,
+            sections: [
+              {
+                id: 'ch1-sec-1a',
+                title: 'SEÇÃO 1A: MISSÕES',
+                isMissable: false,
+                items: [
+                  { id: 'ch1-1a-1', text: 'Prólogo', defaultChecked: false },
+                  { id: 'ch1-1a-2', text: 'Fui pescar', defaultChecked: false },
+                  { id: 'ch1-1a-3', text: 'Prepare-se', defaultChecked: false },
+                  { id: 'ch1-1a-4', text: 'Apenas um arranhão', defaultChecked: false },
+                  { id: 'ch1-1a-5', text: 'Taxas de laboratório', defaultChecked: false },
+                  { id: 'ch1-1a-6', text: 'Atenção indesejada', defaultChecked: false },
+                  { id: 'ch1-1a-7', text: 'Tubulação', defaultChecked: false },
+                  { id: 'ch1-1a-8', text: 'Ei, Arnold! (Fazer Save Antes)', defaultChecked: false },
+                  { id: 'ch1-1a-9', text: 'Sonhos na Ilha', defaultChecked: false },
+                  { id: 'ch1-1a-10', text: 'Feng Shui', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch1-sec-1b',
+                title: 'SEÇÃO 1B: TAREFAS PERDÍVEIS (FAZER ANTES DA LUCIA)',
+                isMissable: true,
+                items: [
+                  { id: 'ch1-1b-1', text: 'Compre o rum da Shirley', defaultChecked: false },
+                  { id: 'ch1-1b-2', text: 'Roube a scooter da Shirley', defaultChecked: false },
+                  { id: 'ch1-1b-3', text: 'Reformar a casa de Jason (arte + estrutura)', defaultChecked: false },
+                  { id: 'ch1-1b-4', text: 'Comprar presentes para Lucia (colar + flores)', defaultChecked: false },
+                  { id: 'ch1-1b-5', text: 'Mudar visual de Jason (cabelo + roupa)', defaultChecked: false },
+                  { id: 'ch1-1b-6', text: 'Reabastecer despensa', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 2,
+            sections: [
+              {
+                id: 'ch1-sec-2a',
+                title: 'SEÇÃO 2A: DADOS DO MAPA & ATIVIDADES',
+                isMissable: false,
+                items: [
+                  { id: 'ch1-2a-1', text: 'Desbravar 100% do mapa de Key Lento', defaultChecked: true },
+                  { id: 'ch1-2a-2', text: 'Local de Meditação 1/5 (Casa Jason)', defaultChecked: true },
+                  { id: 'ch1-2a-3', text: 'Local de Meditação 2/5 (Mirante Sul)', defaultChecked: false },
+                  { id: 'ch1-2a-4', text: 'Desafio de Pesca com Cal (Vencer)', defaultChecked: false },
+                  { id: 'ch1-2a-5', text: '1ª Entrega de Veículo para Moses', defaultChecked: false },
+                  { id: 'ch1-2a-6', text: 'Usar o WAiNK IT 1/100 (Local 1)', defaultChecked: true },
+                  { id: 'ch1-2a-7', text: 'Visitar Bar da Marina', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch1-sec-2b',
+                title: 'SEÇÃO 2B: COLECIONÁVEIS DE KEY LENTO',
+                isMissable: false,
+                items: [
+                  { id: 'ch1-2b-1', text: 'Carta 1/18 (Doca Norte)', defaultChecked: false },
+                  { id: 'ch1-2b-2', text: 'Carta 2/18 (Loja de Iscas)', defaultChecked: false },
+                  { id: 'ch1-2b-3', text: 'Carta 3/18 (Farol Velho)', defaultChecked: false },
+                  { id: 'ch1-2b-4', text: 'Flamingo 1/125 (Quintal Jason)', defaultChecked: false },
+                  { id: 'ch1-2b-5', text: 'Flamingo 2/125 (Praia Pequena)', defaultChecked: false },
+                  { id: 'ch1-2b-6', text: 'Flamingo 3/125 (Telhado Motel)', defaultChecked: false },
+                  { id: 'ch1-2b-7', text: 'Salto Acrobático 1/250 (Ponte Quebrada)', defaultChecked: false },
+                  { id: 'ch1-2b-8', text: 'Salto Acrobático 2/250 (Rampa de Terra)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 3,
+            sections: [
+              {
+                id: 'ch1-sec-3a',
+                title: 'SEÇÃO 3A: CATALOGAR VEÍCULOS (AUTOS ACHADOS X/100)',
+                isMissable: false,
+                items: [
+                  { id: 'ch1-3a-1', text: 'Dinka Blista', defaultChecked: true },
+                  { id: 'ch1-3a-2', text: 'Vapid Peyote Gasser', defaultChecked: false },
+                  { id: 'ch1-3a-3', text: 'Declasse Tulip M-100', defaultChecked: false },
+                  { id: 'ch1-3a-4', text: 'Karin Futo GTX', defaultChecked: false },
+                  { id: 'ch1-3a-5', text: 'Western Daemon', defaultChecked: false },
+                  { id: 'ch1-3a-6', text: 'Imponte Ruiner ZZ-8', defaultChecked: false },
+                  { id: 'ch1-3a-7', text: 'Annis Hellion', defaultChecked: false },
+                  { id: 'ch1-3a-8', text: 'Pfister Comet S2 Cabrio', defaultChecked: false },
+                  { id: 'ch1-3a-9', text: 'Bravado Buffalo STX', defaultChecked: false },
+                  { id: 'ch1-3a-10', text: 'Obey 8F Drafter', defaultChecked: false },
+                  { id: 'ch1-3a-11', text: 'Pegassi Torero XO', defaultChecked: false },
+                  { id: 'ch1-3a-12', text: 'Coil Raiden', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch1-sec-3b',
+                title: 'SEÇÃO 3B: APP SCOOTER BROS (REGISTRAR X/10)',
+                isMissable: false,
+                items: [
+                  { id: 'ch1-3b-1', text: 'Pegassi Faggio Sport', defaultChecked: true },
+                  { id: 'ch1-3b-2', text: 'Nagasaki Shinobi', defaultChecked: false },
+                  { id: 'ch1-3b-3', text: 'Maibatsu Sanchez', defaultChecked: false },
+                  { id: 'ch1-3b-4', text: 'Shitzu PCJ 600', defaultChecked: false },
+                  { id: 'ch1-3b-5', text: 'Dinka Akuma', defaultChecked: false },
+                  { id: 'ch1-3b-6', text: 'Western Cliffhanger', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 4,
+            sections: [
+              {
+                id: 'ch1-sec-4a',
+                title: 'SEÇÃO 4A: SERVIÇOS & MARCO FINAL',
+                isMissable: false,
+                items: [
+                  { id: 'ch1-4a-1', text: 'Encontrar o esconderijo do contrabandista (Opcional)', defaultChecked: false },
+                  { id: 'ch1-4a-2', text: 'Ajudar o pescador perdido (Encontro Aleatório)', defaultChecked: false },
+                  { id: 'ch1-4a-3', text: 'Entregar pacote misterioso (Missão Extra)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch1-sec-4b',
+                title: 'SEÇÃO 4B: CONCLUSÃO DO CAPÍTULO 1',
+                isMissable: false,
+                items: [
+                  { id: 'ch1-4b-1', text: 'Todos os itens da Seção 1B marcados (PERDÍVEIS)', defaultChecked: false, linkedSections: ['ch1-sec-1b'] },
+                  { id: 'ch1-4b-2', text: 'Todos os itens da Seção 2A/2B marcados', defaultChecked: false, linkedSections: ['ch1-sec-2a', 'ch1-sec-2b'] },
+                  { id: 'ch1-4b-3', text: 'Todos os itens da Seção 3A/3B marcados', defaultChecked: false, linkedSections: ['ch1-sec-3a', 'ch1-sec-3b'] },
+                  { id: 'ch1-4b-4', text: 'Salvar o progresso (Check final)', defaultChecked: false },
+                  { id: 'ch1-4b-5', text: 'Iniciar missão "Voltando para casa"', defaultChecked: false }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'ch2',
+        shortLabel: 'Cap. 2',
+        badgeText: 'Capítulo 02',
+        title: 'CAPÍTULO 2: VICE CITY & ADJACÊNCIAS',
+        barGradient: 'from-cyan-400 via-sky-400 to-amber-300',
+        columns: [
+          {
+            column: 1,
+            sections: [
+              {
+                id: 'ch2-sec-1a',
+                title: 'SEÇÃO 1A: PRINCIPAIS & ABORDAGENS',
+                isMissable: false,
+                items: [
+                  { id: 'ch2-1a-1', text: 'Voltando para casa', defaultChecked: false },
+                  { id: 'ch2-1a-2', text: 'Correndo atrás de respostas', defaultChecked: false },
+                  { id: 'ch2-1a-3', text: 'Reunião de negócios', defaultChecked: false },
+                  { id: 'ch2-1a-4', text: 'Hora da verdade', defaultChecked: false },
+                  { id: 'ch2-1a-5', text: 'O novo normal', defaultChecked: false },
+                  { id: 'ch2-1a-6', text: 'Infiltração profunda', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch2-sec-1b',
+                title: 'SEÇÃO 1B: MISSÕES DE JASON',
+                isMissable: false,
+                items: [
+                  { id: 'ch2-1b-1', text: 'Lar, doce lar (Vice City)', defaultChecked: false },
+                  { id: 'ch2-1b-2', text: 'Ronda noturna', defaultChecked: false },
+                  { id: 'ch2-1b-3', text: 'Amigos de ocasião', defaultChecked: false },
+                  { id: 'ch2-1b-4', text: 'O contato', defaultChecked: false },
+                  { id: 'ch2-1b-5', text: 'Ajustando contas', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch2-sec-1c',
+                title: 'SEÇÃO 1C: MISSÕES CONJUNTAS & HEISTS',
+                isMissable: false,
+                items: [
+                  { id: 'ch2-1c-1', text: 'Plano de fuga', defaultChecked: false },
+                  { id: 'ch2-1c-2', text: 'O grande assalto (Primeira Parte)', defaultChecked: false },
+                  { id: 'ch2-1c-3', text: 'O grande assalto (Ação Final)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 2,
+            sections: [
+              {
+                id: 'ch2-sec-2a',
+                title: 'SEÇÃO 2A: VICE CITY REAL ESTATE (GARAGENS X/8)',
+                isMissable: false,
+                items: [
+                  { id: 'ch2-2a-1', text: 'Comprar 1ª Garagem (Little Haiti)', defaultChecked: false },
+                  { id: 'ch2-2a-2', text: 'Comprar 2ª Garagem (Ocean Beach)', defaultChecked: false },
+                  { id: 'ch2-2a-3', text: 'Comprar 3ª Garagem (Downtown)', defaultChecked: false },
+                  { id: 'ch2-2a-4', text: 'Comprar 4ª Garagem (Starfish Island)', defaultChecked: false },
+                  { id: 'ch2-2a-5', text: 'Comprar 5ª Garagem (Vice Point)', defaultChecked: false },
+                  { id: 'ch2-2a-6', text: 'Comprar 6ª Garagem (Leaf Links)', defaultChecked: false },
+                  { id: 'ch2-2a-7', text: 'Comprar 7ª Garagem (Airport)', defaultChecked: false },
+                  { id: 'ch2-2a-8', text: 'Comprar 8ª Garagem (Malibu Club Area)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch2-sec-2b',
+                title: 'SEÇÃO 2B: ATIVIDADES & DESAFIOS URBANOS',
+                isMissable: false,
+                items: [
+                  { id: 'ch2-2b-1', text: 'Estande de Tiro: Medalha de Ouro (Pistola)', defaultChecked: false },
+                  { id: 'ch2-2b-2', text: 'Estande de Tiro: Medalha de Ouro (SMG)', defaultChecked: false },
+                  { id: 'ch2-2b-3', text: 'Corrida de Rua 1/10 (Little Haiti)', defaultChecked: false },
+                  { id: 'ch2-2b-4', text: 'Corrida de Rua 2/10 (Ocean Beach)', defaultChecked: false },
+                  { id: 'ch2-2b-5', text: 'Corrida de DronE Top Fun 1/4', defaultChecked: false },
+                  { id: 'ch2-2b-6', text: 'Fliperama Zerado (QUB3D)', defaultChecked: false },
+                  { id: 'ch2-2b-7', text: 'Boliche (Kolt & Associates)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 3,
+            sections: [
+              {
+                id: 'ch2-sec-3a',
+                title: 'SEÇÃO 3A: COLECIONÁVEIS DE VICE CITY',
+                isMissable: false,
+                items: [
+                  { id: 'ch2-3a-1', text: 'Carta 4/18 (Little Haiti - Oficina)', defaultChecked: false },
+                  { id: 'ch2-3a-2', text: 'Carta 5/18 (Ocean View Hotel)', defaultChecked: false },
+                  { id: 'ch2-3a-3', text: 'Carta 6/18 (Starfish Island - Mansão)', defaultChecked: false },
+                  { id: 'ch2-3a-4', text: 'Carta 7/18 (Aeroporto Internacional)', defaultChecked: false },
+                  { id: 'ch2-3a-5', text: 'Carta 8/18 (Malibu Club)', defaultChecked: false },
+                  { id: 'ch2-3a-6', text: 'Carta 8/18 (Malibu Club) - Extra', defaultChecked: false },
+                  { id: 'ch2-3a-7', text: 'Flamingo 4/125 (Little Havana)', defaultChecked: false },
+                  { id: 'ch2-3a-8', text: 'Flamingo 5/125 (Washington Beach)', defaultChecked: false },
+                  { id: 'ch2-3a-9', text: 'Flamingo 6/125 (Vice Point)', defaultChecked: false },
+                  { id: 'ch2-3a-10', text: 'Flamingo 7/125 (Leaf Links Golf)', defaultChecked: false },
+                  { id: 'ch2-3a-11', text: 'Flamingo 8/125 (VCN Building)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch2-sec-3b',
+                title: 'SEÇÃO 3B: EXPLORAÇÃO & MEDITAÇÃO',
+                isMissable: false,
+                items: [
+                  { id: 'ch2-3b-1', text: '100% do Mapa de Vice City', defaultChecked: true },
+                  { id: 'ch2-3b-2', text: 'Local de Meditação 3/5 (Farol de Ocean Beach)', defaultChecked: true },
+                  { id: 'ch2-3b-3', text: 'Local de Meditação 4/5 (Parque Little Havana)', defaultChecked: false },
+                  { id: 'ch2-3b-4', text: 'Local de Meditação 5/5 (Ponte Starfish)', defaultChecked: false },
+                  { id: 'ch2-3b-5', text: 'Tag WAiNK 2-10/100', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 4,
+            sections: [
+              {
+                id: 'ch2-sec-4a',
+                title: 'SEÇÃO 4A: OPERAÇÕES DE GANGUES (ASSAULT X/4)',
+                isMissable: false,
+                items: [
+                  { id: 'ch2-4a-1', text: 'Assaltar Esconderijo Vagos (Little Havana)', defaultChecked: false },
+                  { id: 'ch2-4a-2', text: 'Assaltar Esconderijo Marabunta Grande (Little Haiti)', defaultChecked: false },
+                  { id: 'ch2-4a-3', text: 'Assaltar Operação de Tráfico (Porto)', defaultChecked: false },
+                  { id: 'ch2-4a-4', text: 'Assaltar Cofre de Gangue (Docks)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch2-sec-4b',
+                title: 'SEÇÃO 4B: ECONOMIA & VEÍCULOS RAROS',
+                isMissable: false,
+                items: [
+                  { id: 'ch2-4b-1', text: 'Lavar $100.000 em Notas Marcadas', defaultChecked: false },
+                  { id: 'ch2-4b-2', text: 'Vender $50.000 em Joias', defaultChecked: false },
+                  { id: 'ch2-4b-3', text: 'Vender 5 Veículos Roubados', defaultChecked: false },
+                  { id: 'ch2-4b-4', text: 'Descobrir 3 Veículos Únicos (ex: Infernus Clássico, Cheetah, Comet Retro)', defaultChecked: false },
+                  { id: 'ch2-4b-5', text: '10 Veículos no App Scooter Bros', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch2-sec-4c',
+                title: 'SEÇÃO 4C: CONCLUSÃO DO CAPÍTULO 2',
+                isMissable: false,
+                items: [
+                  { id: 'ch2-4c-1', text: 'Todos os itens da Seção 1A-1C marcados', defaultChecked: false, linkedSections: ['ch2-sec-1a', 'ch2-sec-1b', 'ch2-sec-1c'] },
+                  { id: 'ch2-4c-2', text: 'Todos os itens da Seção 2A-2B marcados', defaultChecked: false, linkedSections: ['ch2-sec-2a', 'ch2-sec-2b'] },
+                  { id: 'ch2-4c-3', text: 'Todos os itens da Seção 3A-3B marcados', defaultChecked: false, linkedSections: ['ch2-sec-3a', 'ch2-sec-3b'] },
+                  { id: 'ch2-4c-4', text: 'Todos os itens da Seção 4A-4B marcados', defaultChecked: false, linkedSections: ['ch2-sec-4a', 'ch2-sec-4b'] },
+                  { id: 'ch2-4c-5', text: 'Salvar o progresso', defaultChecked: false },
+                  { id: 'ch2-4c-6', text: 'Iniciar missão "Mudança de ares"', defaultChecked: false }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'ch3',
+        shortLabel: 'Cap. 3',
+        badgeText: 'Capítulo 03',
+        title: 'CAPÍTULO 3: PÂNTANO E FRONTEIRA',
+        barGradient: 'from-emerald-400 via-teal-400 to-cyan-400',
+        columns: [
+          {
+            column: 1,
+            sections: [
+              {
+                id: 'ch3-sec-1a',
+                title: 'SEÇÃO 1A: MISSÕES DO PÂNTANO',
+                isMissable: false,
+                items: [
+                  { id: 'ch3-1a-1', text: 'Mudança de ares', defaultChecked: false },
+                  { id: 'ch3-1a-2', text: 'O pântano ferve', defaultChecked: false },
+                  { id: 'ch3-1a-3', text: 'Estranhos no bayou', defaultChecked: false },
+                  { id: 'ch3-1a-4', text: 'Lar, doce (novo) lar', defaultChecked: false },
+                  { id: 'ch3-1a-5', text: 'Caça às bruxas', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch3-sec-1b',
+                title: 'SEÇÃO 1B: MISSÕES DA FRONTEIRA',
+                isMissable: false,
+                items: [
+                  { id: 'ch3-1b-1', text: 'Cruzando a linha', defaultChecked: false },
+                  { id: 'ch3-1b-2', text: 'O cartel local', defaultChecked: false },
+                  { id: 'ch3-1b-3', text: 'Areia movediça', defaultChecked: false },
+                  { id: 'ch3-1b-4', text: 'O último recurso', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 2,
+            sections: [
+              {
+                id: 'ch3-sec-2a',
+                title: 'SEÇÃO 2A: DESAFIOS DOS INTERIOS RURAIS',
+                isMissable: false,
+                items: [
+                  { id: 'ch3-2a-1', text: 'Caçada de Animal Lendário: Aligátor Albino', defaultChecked: true },
+                  { id: 'ch3-2a-2', text: 'Desafio de Pesca: Peixe-espada Gigante', defaultChecked: false },
+                  { id: 'ch3-2a-3', text: 'Corrida de Rua 3/10 (Estradas de Terra)', defaultChecked: false },
+                  { id: 'ch3-2a-4', text: 'Corrida de Drone Top Fun 2/4 (Fazenda Eólica)', defaultChecked: false },
+                  { id: 'ch3-2a-5', text: 'Estande de Tiro: Medalha de Ouro (Rifle)', defaultChecked: false },
+                  { id: 'ch3-2a-6', text: 'Estande de Tiro: Medalha de Ouro (Escopeta)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch3-sec-2b',
+                title: 'SEÇÃO 2B: SERVIÇOS & MEDITAÇÃO RURAL',
+                isMissable: false,
+                items: [
+                  { id: 'ch3-2b-1', text: 'Entrega de Caminhão Roubado (2/5)', defaultChecked: false },
+                  { id: 'ch3-2b-2', text: 'Ajuda ao Viajante Perdido (Encontro 2/3)', defaultChecked: false },
+                  { id: 'ch3-2b-3', text: 'Local de Meditação 6/5 (Cabana do Eremita)', defaultChecked: false },
+                  { id: 'ch3-2b-4', text: 'Local de Meditação 7/5 (Topo da Colina Sagrada)', defaultChecked: false },
+                  { id: 'ch3-2b-5', text: 'Local de Meditação 8/5 (Ponte da Ferrovia)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 3,
+            sections: [
+              {
+                id: 'ch3-sec-3a',
+                title: 'SEÇÃO 3A: COLECIONÁVEIS (ÁRCULOS DO INTERIOR)',
+                isMissable: false,
+                items: [
+                  { id: 'ch3-3a-1', text: 'Carta 9/18 (Cabana Abandonada)', defaultChecked: true },
+                  { id: 'ch3-3a-2', text: 'Carta 10/18 (Posto de Gasolina da Fronteira)', defaultChecked: false },
+                  { id: 'ch3-3a-3', text: 'Carta 11/18 (Fazenda de Gado)', defaultChecked: false },
+                  { id: 'ch3-3a-4', text: 'Carta 12/18 (Tribo Seminole)', defaultChecked: false },
+                  { id: 'ch3-3a-5', text: 'Carta 12/18 (Tribo Seminole) - Extra', defaultChecked: false },
+                  { id: 'ch3-3a-6', text: 'Flamingo 9/125 (Pântano Profundo)', defaultChecked: false },
+                  { id: 'ch3-3a-7', text: 'Flamingo 10/125 (Posto de Pesca)', defaultChecked: false },
+                  { id: 'ch3-3a-8', text: 'Flamingo 11/125 (Fazenda Abandonada)', defaultChecked: false },
+                  { id: 'ch3-3a-9', text: 'Flamingo 12/125 (Cruzeiro do Pântano)', defaultChecked: false },
+                  { id: 'ch3-3a-10', text: 'Flamingo 12/125 (Cruzeiro do Pântano) - Extra', defaultChecked: false },
+                  { id: 'ch3-3a-11', text: 'Tag WAiNK 11-20/100', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch3-sec-3b',
+                title: 'SEÇÃO 3B: VEÍCULOS EXCLUSIVOS DO PÂNTANO',
+                isMissable: false,
+                items: [
+                  { id: 'ch3-3b-1', text: 'Catalogar Air Coaster', defaultChecked: true },
+                  { id: 'ch3-3b-2', text: 'Catalogar Caminhão Monstro (Sandking SWB)', defaultChecked: true },
+                  { id: 'ch3-3b-3', text: 'Catalogar Trator (Fieldmaster)', defaultChecked: false },
+                  { id: 'ch3-3b-4', text: 'Catalogar Trator (Fieldmaster) - Extra', defaultChecked: false },
+                  { id: 'ch3-3b-5', text: 'Catalogar Quadriciclo (Rancher XL)', defaultChecked: false },
+                  { id: 'ch3-3b-6', text: 'Registrar Hotknife no App Scooter Bros', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 4,
+            sections: [
+              {
+                id: 'ch3-sec-4a',
+                title: 'SEÇÃO 4A: OPERAÇÕES DE ROUBO (HEISTS X/5)',
+                isMissable: false,
+                items: [
+                  { id: 'ch3-4a-1', text: 'Assalto à Loja de Conveniência (Highway 27)', defaultChecked: false },
+                  { id: 'ch3-4a-2', text: 'Assalto a Caixa Eletrônico (Oculto)', defaultChecked: false },
+                  { id: 'ch3-4a-3', text: 'Roubo a Carro-Forte (Área Rural)', defaultChecked: false },
+                  { id: 'ch3-4a-4', text: 'Assalto a Posto de Correios (Smalltown)', defaultChecked: false },
+                  { id: 'ch3-4a-5', text: 'Invasão a Depósito de Armas', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch3-sec-4b',
+                title: 'SEÇÃO 4B: MARCOS DE PROGRESSO & MUDANÇA',
+                isMissable: false,
+                items: [
+                  { id: 'ch3-4b-1', text: 'Lavar $200.000 em Notas Marcadas', defaultChecked: false },
+                  { id: 'ch3-4b-2', text: 'Vender $75.000 em Joias', defaultChecked: false },
+                  { id: 'ch3-4b-3', text: '15 Veículos no App Scooter Bros', defaultChecked: false },
+                  { id: 'ch3-4b-4', text: '50% do Mapa Total Descoberto', defaultChecked: false },
+                  { id: 'ch3-4b-5', text: '50% do Mapa Total Descoberto - Extra', defaultChecked: false },
+                  { id: 'ch3-4b-6', text: 'Concluir Missão "Reunião de Cúpula"', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch3-sec-4c',
+                title: 'SEÇÃO 4C: CONCLUSÃO DO CAPÍTULO 3',
+                isMissable: false,
+                items: [
+                  { id: 'ch3-4c-1', text: 'Todos os itens da Seção 1A-1B marcados', defaultChecked: false, linkedSections: ['ch3-sec-1a', 'ch3-sec-1b'] },
+                  { id: 'ch3-4c-2', text: 'Todos os itens da Seção 2A-2B marcados', defaultChecked: false, linkedSections: ['ch3-sec-2a', 'ch3-sec-2b'] },
+                  { id: 'ch3-4c-3', text: 'Todos os itens da Seção 3A-3B marcados', defaultChecked: false, linkedSections: ['ch3-sec-3a', 'ch3-sec-3b'] },
+                  { id: 'ch3-4c-4', text: 'Todos os itens da Seção 4A-4B marcados', defaultChecked: false, linkedSections: ['ch3-sec-4a', 'ch3-sec-4b'] },
+                  { id: 'ch3-4c-5', text: 'Salvar o progresso', defaultChecked: false },
+                  { id: 'ch3-4c-6', text: 'Iniciar missão "Ataque ao Comboio"', defaultChecked: false }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'ch4',
+        shortLabel: 'Cap. 4',
+        badgeText: 'Capítulo 04',
+        title: 'CAPÍTULO 4: PORT GELLHORN & INDÚSTRIA',
+        barGradient: 'from-purple-500 via-fuchsia-500 to-pink-500',
+        columns: [
+          {
+            column: 1,
+            sections: [
+              {
+                id: 'ch4-sec-1a',
+                title: 'SEÇÃO 1A: MISSÕES PORT GELLHORN (HISTÓRIA JASON & LUCIA)',
+                isMissable: false,
+                items: [
+                  { id: 'ch4-1a-1', text: 'Ataque ao comboio', defaultChecked: false },
+                  { id: 'ch4-1a-2', text: 'Negócios arriscados', defaultChecked: false },
+                  { id: 'ch4-1a-3', text: 'Jogo de poder', defaultChecked: false },
+                  { id: 'ch4-1a-4', text: 'Conexões industriais', defaultChecked: false },
+                  { id: 'ch4-1a-5', text: 'O cerco', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch4-sec-1b',
+                title: 'SEÇÃO 1B: MISSÕES DA INDÚSTRIA',
+                isMissable: false,
+                items: [
+                  { id: 'ch4-1b-1', text: 'Suborno e traição', defaultChecked: false },
+                  { id: 'ch4-1b-2', text: 'Linha de montagem', defaultChecked: false },
+                  { id: 'ch4-1b-3', text: 'Fuga pelo duto', defaultChecked: false },
+                  { id: 'ch4-1b-4', text: 'Ajuste final', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 2,
+            sections: [
+              {
+                id: 'ch4-sec-2a',
+                title: 'SEÇÃO 2A: DESAFIOS DO PORTO',
+                isMissable: false,
+                items: [
+                  { id: 'ch4-2a-1', text: 'Corrida de Rua 4/10 (Área Portuária)', defaultChecked: false },
+                  { id: 'ch4-2a-2', text: 'Corrida de Drone Top Fun 3/4 (Pátio de Contêineres)', defaultChecked: false },
+                  { id: 'ch4-2a-3', text: 'Estande de Tiro: Medalha de Ouro (Pesada)', defaultChecked: false },
+                  { id: 'ch4-2a-4', text: 'Estande de Tiro: Medalha de Ouro (Explosivos)', defaultChecked: false },
+                  { id: 'ch4-2a-5', text: 'Desafio Extra do Porto (Port Gellhorn)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch4-sec-2b',
+                title: 'SEÇÃO 2B: SERVIÇOS & MEDITAÇÃO INDUSTRIAL',
+                isMissable: false,
+                items: [
+                  { id: 'ch4-2b-1', text: 'Entrega de Veículo Especial (Moses) 3/5', defaultChecked: false },
+                  { id: 'ch4-2b-2', text: 'Auxílio ao Mecânico Perdido (Encontro 3/3)', defaultChecked: false },
+                  { id: 'ch4-2b-3', text: 'Local de Meditação 9/5 (Topo do Guindaste)', defaultChecked: false },
+                  { id: 'ch4-2b-4', text: 'Local de Meditação 10/5 (Telhado da Fábrica)', defaultChecked: false },
+                  { id: 'ch4-2b-5', text: 'Local de Meditação 11/5 (Armazém Abandonado)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 3,
+            sections: [
+              {
+                id: 'ch4-sec-3a',
+                title: 'SEÇÃO 3A: COLECIONÁVEIS (ÁRCULOS ESPECÍFICOS)',
+                isMissable: false,
+                items: [
+                  { id: 'ch4-3a-1', text: 'Carta 13/18 (Escritório do Porto)', defaultChecked: false },
+                  { id: 'ch4-3a-2', text: 'Carta 14/18 (Fábrica de Enlatados)', defaultChecked: false },
+                  { id: 'ch4-3a-3', text: 'Carta 15/18 (Ferro-Velho)', defaultChecked: false },
+                  { id: 'ch4-3a-4', text: 'Flamingo 13/125 (Porto Gellhorn)', defaultChecked: false },
+                  { id: 'ch4-3a-5', text: 'Flamingo 14/125 (Área Industrial)', defaultChecked: false },
+                  { id: 'ch4-3a-6', text: 'Flamingo 15/125 (Tanques de Combustível)', defaultChecked: false },
+                  { id: 'ch4-3a-7', text: 'Tag WAiNK 21-30/100', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch4-sec-3b',
+                title: 'SEÇÃO 3B: VEÍCULOS EXCLUSIVOS DO PORTO',
+                isMissable: false,
+                items: [
+                  { id: 'ch4-3b-1', text: 'Catalogar Caminhão Guindaste (Tow Truck)', defaultChecked: true },
+                  { id: 'ch4-3b-2', text: 'Catalogar Empilhadeira (Forklift)', defaultChecked: true },
+                  { id: 'ch4-3b-3', text: 'Catalogar Caminhão de Carga (Hauler)', defaultChecked: false },
+                  { id: 'ch4-3b-4', text: 'Catalogar Carro de Polícia (Port Gellhorn Cruiser)', defaultChecked: false },
+                  { id: 'ch4-3b-5', text: 'Registrar Faggio Mod no App Scooter Bros', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 4,
+            sections: [
+              {
+                id: 'ch4-sec-4a',
+                title: 'SEÇÃO 4A: OPERAÇÕES DE GRANDE PORTE (GRAND HEISTS X/5)',
+                isMissable: false,
+                items: [
+                  { id: 'ch4-4a-1', text: 'Assalto ao Banco Central de Port Gellhorn', defaultChecked: false },
+                  { id: 'ch4-4a-2', text: 'Roubo ao Trem de Carga', defaultChecked: false },
+                  { id: 'ch4-4a-3', text: 'Invasão à Base Militar (Opcional)', defaultChecked: false },
+                  { id: 'ch4-4a-4', text: 'Assalto à Torre de Controle (Porto)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch4-sec-4b',
+                title: 'SEÇÃO 4B: MARCOS DE PROGRESSO & MUDANÇA',
+                isMissable: false,
+                items: [
+                  { id: 'ch4-4b-1', text: 'Lavar $350.000 em Notas Marcadas', defaultChecked: false },
+                  { id: 'ch4-4b-2', text: 'Vender $150.000 em Joias', defaultChecked: false },
+                  { id: 'ch4-4b-3', text: '20 Veículos no App Scooter Bros', defaultChecked: false },
+                  { id: 'ch4-4b-4', text: '75% do Mapa Total Descoberto', defaultChecked: false },
+                  { id: 'ch4-4b-5', text: 'Concluir Missão "A Grande Reunião"', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'ch4-sec-4c',
+                title: 'SEÇÃO 4C: CONCLUSÃO DO CAPÍTULO 4',
+                isMissable: false,
+                items: [
+                  { id: 'ch4-4c-1', text: 'Todos os itens da Seção 1A-1B marcados', defaultChecked: false, linkedSections: ['ch4-sec-1a', 'ch4-sec-1b'] },
+                  { id: 'ch4-4c-2', text: 'Todos os itens da Seção 2A-2B marcados', defaultChecked: false, linkedSections: ['ch4-sec-2a', 'ch4-sec-2b'] },
+                  { id: 'ch4-4c-3', text: 'Todos os itens da Seção 3A-3B marcados', defaultChecked: false, linkedSections: ['ch4-sec-3a', 'ch4-sec-3b'] },
+                  { id: 'ch4-4c-4', text: 'Todos os itens da Seção 4A-4B marcados', defaultChecked: false, linkedSections: ['ch4-sec-4a', 'ch4-sec-4b'] },
+                  { id: 'ch4-4c-5', text: 'Salvar o progresso', defaultChecked: false },
+                  { id: 'ch4-4c-6', text: 'Iniciar missão "Retorno a Vice City"', defaultChecked: false }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ];
+
+    // =========================================================================
+    // ESTADO DA APLICAÇÃO
+    // =========================================================================
+    let checkedState = {};
+    let currentFilter = 'all';   // 'all' | 'pending' | 'completed'
+    let currentChapter = 'all';  // 'all' | 'ch1' | 'ch2' | 'ch3' | 'ch4'
+    let searchQuery = '';
+
+    // Mapeia chaves antigas de versões anteriores para os novos IDs sem perder o progresso
+    function migrateLegacyProgress(targetState) {
+      const mergedLegacy = {};
+      LEGACY_KEYS.forEach(key => {
+        try {
+          const raw = localStorage.getItem(key);
+          if (!raw) return;
+          const parsed = JSON.parse(raw);
+          const source = parsed && typeof parsed === 'object' && parsed.progress ? parsed.progress : parsed;
+          if (source && typeof source === 'object') {
+            Object.assign(mergedLegacy, source);
+          }
+        } catch (err) {
+          console.warn('Falha ao ler chave legada:', key, err);
+        }
+      });
+
+      if (Object.keys(mergedLegacy).length === 0) return false;
+
+      // Mapeamento direto da versão v1 do Capítulo 1 (ex: '1a-1' -> 'ch1-1a-1')
+      CHAPTERS_DATA.forEach(ch => {
+        ch.columns.forEach(col => {
+          col.sections.forEach(sec => {
+            const shortSecId = sec.id.replace(/^ch\d+-sec-/, ''); // ex: '1a'
+            sec.items.forEach((item, idx) => {
+              const oldV1Id = `${shortSecId}-${idx + 1}`;
+              const oldV2Key = `${shortSecId}_${idx}`;
+              const oldChKey = `${sec.id.replace(/^ch\d+-sec-/, ch.id.startsWith('ch2') ? 'c2_' : ch.id.startsWith('ch3') ? 'c3_' : ch.id.startsWith('ch4') ? 'c4_' : '')}_${idx}`;
+
+              if (item.id in mergedLegacy) {
+                targetState[item.id] = !!mergedLegacy[item.id];
+              } else if (ch.id === 'ch1' && oldV1Id in mergedLegacy) {
+                targetState[item.id] = !!mergedLegacy[oldV1Id];
+              } else if (oldV2Key in mergedLegacy) {
+                targetState[item.id] = !!mergedLegacy[oldV2Key];
+              } else if (oldChKey in mergedLegacy) {
+                targetState[item.id] = !!mergedLegacy[oldChKey];
+              }
+            });
+          });
+        });
+      });
+
+      return true;
+    }
+
+    // Carrega o estado inicial (do localStorage, migrado ou padrão das imagens)
+    function loadState() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          checkedState = {};
+          CHAPTERS_DATA.forEach(ch => {
+            ch.columns.forEach(col => {
+              col.sections.forEach(sec => {
+                sec.items.forEach(item => {
+                  checkedState[item.id] = Object.prototype.hasOwnProperty.call(parsed, item.id)
+                    ? !!parsed[item.id]
+                    : !!item.defaultChecked;
+                });
+              });
+            });
+          });
+          saveState();
+          return;
+        }
+      } catch (e) {
+        console.error('Erro ao ler localStorage:', e);
+      }
+
+      // Inicializa com padrões das imagens e tenta migrar dados anteriores
+      checkedState = {};
+      CHAPTERS_DATA.forEach(ch => {
+        ch.columns.forEach(col => {
+          col.sections.forEach(sec => {
+            sec.items.forEach(item => {
+              checkedState[item.id] = !!item.defaultChecked;
+            });
+          });
+        });
+      });
+      migrateLegacyProgress(checkedState);
+      saveState();
+    }
+
+    // Salva o estado no localStorage
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(checkedState));
+      } catch (e) {
+        console.error('Erro ao salvar no localStorage:', e);
+      }
+    }
+
+    // Define os valores padrão conforme as imagens enviadas
+    function resetToImageDefaults(shouldRender = true) {
+      checkedState = {};
+      CHAPTERS_DATA.forEach(ch => {
+        ch.columns.forEach(col => {
+          col.sections.forEach(sec => {
+            sec.items.forEach(item => {
+              checkedState[item.id] = !!item.defaultChecked;
+            });
+          });
+        });
+      });
+      saveState();
+      if (shouldRender) {
+        renderChecklist();
+        showToast('Estado inicial das imagens restaurado!');
+      }
+    }
+
+    // Zera todos os itens (0%)
+    function resetAllToZero() {
+      checkedState = {};
+      CHAPTERS_DATA.forEach(ch => {
+        ch.columns.forEach(col => {
+          col.sections.forEach(sec => {
+            sec.items.forEach(item => {
+              checkedState[item.id] = false;
+            });
+          });
+        });
+      });
+      saveState();
+      renderChecklist();
+      showToast('Todo o progresso foi zerado (0%).');
+    }
+
+    // Verifica se uma ou mais seções estão 100% concluídas
+    function areSectionsComplete(sectionIds) {
+      return sectionIds.every(secId => {
+        for (const ch of CHAPTERS_DATA) {
+          for (const col of ch.columns) {
+            const sec = col.sections.find(s => s.id === secId);
+            if (sec) {
+              return sec.items.every(item => !!checkedState[item.id]);
+            }
+          }
+        }
+        return false;
+      });
+    }
+
+    // =========================================================================
+    // RENDERIZAÇÃO E ATUALIZAÇÃO DE PROGRESSO
+    // =========================================================================
+    function renderChapterProgressCards() {
+      const cardsContainer = document.getElementById('chapter-progress-cards');
+      cardsContainer.innerHTML = '';
+
+      CHAPTERS_DATA.forEach(ch => {
+        let chTotal = 0;
+        let chCompleted = 0;
+
+        ch.columns.forEach(col => {
+          col.sections.forEach(sec => {
+            sec.items.forEach(item => {
+              chTotal++;
+              if (checkedState[item.id]) chCompleted++;
+            });
+          });
+        });
+
+        const pct = chTotal > 0 ? Math.round((chCompleted / chTotal) * 100) : 0;
+        const isSelected = currentChapter === ch.id;
+
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.dataset.jumpChapter = ch.id;
+        card.className = `text-left rounded-xl p-3 border transition cursor-pointer ${
+          isSelected
+            ? 'bg-slate-900/95 border-pink-400/70 shadow-[0_0_15px_rgba(236,72,153,0.22)]'
+            : 'bg-slate-900/65 border-slate-700/70 hover:border-cyan-400/50 hover:bg-slate-900/85'
+        }`;
+
+        card.innerHTML = `
+          <div class="flex items-center justify-between gap-2 mb-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-cyan-300 truncate">${ch.title}</span>
+            <span class="font-display text-sm font-bold text-pink-300 shrink-0">${pct}%</span>
+          </div>
+          <div class="flex items-center justify-between text-[11px] text-slate-400 mb-1.5">
+            <span>${chCompleted} / ${chTotal} itens</span>
+            <span>${pct === 100 ? 'Concluído' : 'Em andamento'}</span>
+          </div>
+          <div class="w-full h-1.5 bg-slate-950/90 rounded-full overflow-hidden">
+            <div class="h-full rounded-full bg-gradient-to-r ${ch.barGradient} transition-all duration-300" style="width: ${pct}%"></div>
+          </div>
+        `;
+
+        card.addEventListener('click', () => {
+          currentChapter = currentChapter === ch.id ? 'all' : ch.id;
+          syncChapterButtons();
+          renderChecklist();
+        });
+
+        cardsContainer.appendChild(card);
+      });
+    }
+
+    function renderChecklist() {
+      const container = document.getElementById('chapters-container');
+      const emptyState = document.getElementById('empty-state');
+      container.innerHTML = '';
+
+      let totalVisibleItems = 0;
+
+      CHAPTERS_DATA.forEach(chData => {
+        if (currentChapter !== 'all' && currentChapter !== chData.id) return;
+
+        let chTotal = 0;
+        let chCompleted = 0;
+        chData.columns.forEach(c => c.sections.forEach(s => s.items.forEach(it => {
+          chTotal++;
+          if (checkedState[it.id]) chCompleted++;
+        })));
+        const chPercent = chTotal > 0 ? Math.round((chCompleted / chTotal) * 100) : 0;
+
+        const chapterSection = document.createElement('section');
+        chapterSection.id = `block-${chData.id}`;
+        chapterSection.className = 'space-y-4';
+
+        // Banner de Cabeçalho do Capítulo
+        const banner = document.createElement('div');
+        banner.className = 'vice-card rounded-2xl px-4 sm:px-6 py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-l-4 border-l-pink-500';
+        banner.innerHTML = `
+          <div class="flex flex-wrap items-center gap-2.5">
+            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-pink-500/20 text-pink-300 border border-pink-500/40">
+              ${chData.badgeText}
+            </span>
+            <h2 class="font-display text-xl sm:text-2xl font-bold uppercase tracking-wide neon-title-cyan">
+              ${chData.title}
+            </h2>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-xs sm:text-sm font-medium text-slate-300">${chCompleted} / ${chTotal} concluídos</span>
+            <span class="font-display text-lg sm:text-xl font-bold text-pink-400">${chPercent}%</span>
+          </div>
+        `;
+
+        // Grade das 4 Colunas do Capítulo
+        const grid = document.createElement('div');
+        grid.className = 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 items-start';
+
+        let chapterHasVisibleItems = false;
+
+        chData.columns.forEach(colData => {
+          const colEl = document.createElement('div');
+          colEl.className = 'vice-card rounded-2xl p-4 sm:p-5 flex flex-col gap-6 transition-all';
+
+          let colHasVisibleItems = false;
+
+          colData.sections.forEach(section => {
+            const secTotal = section.items.length;
+            const secCompleted = section.items.filter(i => !!checkedState[i.id]).length;
+            const secPercent = secTotal > 0 ? Math.round((secCompleted / secTotal) * 100) : 0;
+
+            const filteredItems = section.items.filter(item => {
+              const isChecked = !!checkedState[item.id];
+              if (currentFilter === 'pending' && isChecked) return false;
+              if (currentFilter === 'completed' && !isChecked) return false;
+              if (searchQuery.trim() !== '') {
+                const q = searchQuery.toLowerCase();
+                const matchText = item.text.toLowerCase().includes(q);
+                const matchSec = section.title.toLowerCase().includes(q);
+                const matchCh = chData.title.toLowerCase().includes(q);
+                if (!matchText && !matchSec && !matchCh) return false;
+              }
+              return true;
+            });
+
+            if (filteredItems.length === 0) return;
+            colHasVisibleItems = true;
+            chapterHasVisibleItems = true;
+            totalVisibleItems += filteredItems.length;
+
+            const secEl = document.createElement('div');
+            secEl.className = 'flex flex-col';
+
+            const headerHtml = `
+              <div class="mb-2.5">
+                <div class="flex items-start justify-between gap-2">
+                  <h3 class="font-display text-lg sm:text-xl font-bold uppercase tracking-wide leading-snug ${section.isMissable ? 'text-amber-300 drop-shadow-[0_0_8px_rgba(251,191,36,0.4)]' : 'neon-title-cyan'}">
+                    ${section.title}
+                  </h3>
+                  <span class="text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-900/90 border border-slate-700/80 text-slate-300 whitespace-nowrap mt-0.5">
+                    ${secCompleted}/${secTotal}
+                  </span>
+                </div>
+
+                ${section.isMissable ? `
+                  <div class="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-amber-500/15 border border-amber-500/40 text-amber-300 text-[11px] font-semibold uppercase tracking-wider">
+                    <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    Atenção: Perdível antes da Lucia
+                  </div>
+                ` : ''}
+
+                <!-- Mini barra de progresso da seção -->
+                <div class="w-full h-1.5 bg-slate-900/90 rounded-full overflow-hidden mt-2">
+                  <div class="h-full rounded-full transition-all duration-300 ${secPercent === 100 ? 'bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.7)]' : 'bg-gradient-to-r from-cyan-400 to-pink-500'}" style="width: ${secPercent}%"></div>
+                </div>
+              </div>
+            `;
+
+            secEl.innerHTML = headerHtml;
+
+            const listEl = document.createElement('ul');
+            listEl.className = 'space-y-1.5';
+
+            filteredItems.forEach(item => {
+              const isChecked = !!checkedState[item.id];
+              const li = document.createElement('li');
+
+              let linkedBadge = '';
+              if (item.linkedSections) {
+                const allLinkedDone = areSectionsComplete(item.linkedSections);
+                if (allLinkedDone) {
+                  linkedBadge = `<span class="ml-auto shrink-0 text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Pronto!</span>`;
+                } else {
+                  linkedBadge = `<span class="ml-auto shrink-0 text-[10px] font-medium uppercase px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700">Pendente</span>`;
+                }
+              }
+
+              li.innerHTML = `
+                <label class="group flex items-center gap-3 p-2.5 rounded-xl cursor-pointer transition-all select-none border ${
+                  isChecked
+                    ? 'bg-pink-500/10 border-pink-500/25 hover:bg-pink-500/15'
+                    : 'bg-slate-900/45 border-transparent hover:bg-slate-800/70 hover:border-cyan-500/30'
+                }">
+                  <input
+                    type="checkbox"
+                    class="custom-checkbox"
+                    data-id="${item.id}"
+                    ${isChecked ? 'checked' : ''}
+                  />
+                  <span class="text-sm sm:text-[15px] leading-snug transition-all ${
+                    isChecked
+                      ? 'line-through text-slate-400 decoration-pink-400/70'
+                      : 'text-slate-100 group-hover:text-white font-medium'
+                  }">
+                    ${item.text}
+                  </span>
+                  ${linkedBadge}
+                </label>
+              `;
+
+              const checkbox = li.querySelector('input[type="checkbox"]');
+              checkbox.addEventListener('change', (e) => {
+                checkedState[item.id] = e.target.checked;
+                saveState();
+                renderChecklist();
+              });
+
+              listEl.appendChild(li);
+            });
+
+            secEl.appendChild(listEl);
+            colEl.appendChild(secEl);
+          });
+
+          if (colHasVisibleItems) {
+            grid.appendChild(colEl);
+          }
+        });
+
+        if (chapterHasVisibleItems) {
+          chapterSection.appendChild(banner);
+          chapterSection.appendChild(grid);
+          container.appendChild(chapterSection);
+        }
+      });
+
+      if (totalVisibleItems === 0) {
+        container.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+      } else {
+        container.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+      }
+
+      updateGlobalProgress();
+      renderChapterProgressCards();
+    }
+
+    // Atualiza a barra e contadores gerais no topo
+    function updateGlobalProgress() {
+      let total = 0;
+      let completed = 0;
+
+      CHAPTERS_DATA.forEach(ch => {
+        ch.columns.forEach(col => {
+          col.sections.forEach(sec => {
+            sec.items.forEach(item => {
+              total++;
+              if (checkedState[item.id]) completed++;
+            });
+          });
+        });
+      });
+
+      const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+      document.getElementById('global-count').textContent = `${completed} / ${total} concluídos`;
+      document.getElementById('global-percent').textContent = `${percent}%`;
+      document.getElementById('global-progress-bar').style.width = `${percent}%`;
+
+      const badgeComplete = document.getElementById('badge-complete');
+      if (percent === 100) {
+        badgeComplete.classList.remove('hidden');
+      } else {
+        badgeComplete.classList.add('hidden');
+      }
+    }
+
+    // Sincroniza estilo visual dos botões de capítulo
+    function syncChapterButtons() {
+      const chapterBtns = document.querySelectorAll('.chapter-btn');
+      chapterBtns.forEach(b => {
+        const active = b.dataset.chapter === currentChapter;
+        b.classList.toggle('active', active);
+        b.classList.toggle('font-semibold', active);
+        b.classList.toggle('bg-pink-500/25', active);
+        b.classList.toggle('text-pink-200', active);
+        b.classList.toggle('border-pink-500/50', active);
+        b.classList.toggle('shadow-[0_0_10px_rgba(236,72,153,0.25)]', active);
+        b.classList.toggle('font-medium', !active);
+        b.classList.toggle('text-slate-400', !active);
+        b.classList.toggle('border-transparent', !active);
+      });
+    }
+
+    // =========================================================================
+    // NOTIFICAÇÕES (TOAST) E BACKUP JSON
+    // =========================================================================
+    let toastTimeout;
+    function showToast(message, isError = false) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-msg');
+      const toastIcon = document.getElementById('toast-icon');
+
+      toastMsg.textContent = message;
+      toastIcon.textContent = isError ? '⚠' : '✓';
+      toastIcon.className = isError ? 'text-rose-400 font-bold' : 'text-cyan-400 font-bold';
+
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3200);
+    }
+
+    function exportBackup() {
+      const backupData = {
+        game: 'GTA VI - Roteiro 100% Completo (Capítulos 1 a 4)',
+        exportedAt: new Date().toISOString(),
+        progress: checkedState
+      };
+      const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `gtavi-roteiro-cap1-a-4-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Backup JSON exportado com sucesso!');
+    }
+
+    function importBackup(file) {
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          const importedProgress = parsed.progress || parsed;
+          if (typeof importedProgress !== 'object' || importedProgress === null) {
+            throw new Error('Formato inválido');
+          }
+          CHAPTERS_DATA.forEach(ch => {
+            ch.columns.forEach(col => {
+              col.sections.forEach(sec => {
+                sec.items.forEach(item => {
+                  if (item.id in importedProgress) {
+                    checkedState[item.id] = !!importedProgress[item.id];
+                  }
+                });
+              });
+            });
+          });
+          saveState();
+          renderChecklist();
+          showToast('Progresso restaurado do arquivo de backup!');
+        } catch (err) {
+          showToast('Erro ao importar: arquivo JSON inválido.', true);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    // =========================================================================
+    // EVENT LISTENERS
+    // =========================================================================
+    document.addEventListener('DOMContentLoaded', () => {
+      loadState();
+      renderChecklist();
+
+      // Seletor de Capítulo
+      document.querySelectorAll('.chapter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          currentChapter = btn.dataset.chapter;
+          syncChapterButtons();
+          renderChecklist();
+        });
+      });
+
+      // Filtros (Todos, Pendentes, Concluídos)
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('active', 'bg-cyan-500/20', 'text-cyan-300', 'border-cyan-500/40');
+            b.classList.add('text-slate-400', 'border-transparent');
+          });
+          btn.classList.add('active', 'bg-cyan-500/20', 'text-cyan-300', 'border-cyan-500/40');
+          btn.classList.remove('text-slate-400', 'border-transparent');
+
+          currentFilter = btn.dataset.filter;
+          renderChecklist();
+        });
+      });
+
+      // Busca
+      const searchInput = document.getElementById('search-input');
+      const clearSearchBtn = document.getElementById('clear-search');
+
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        clearSearchBtn.classList.toggle('hidden', searchQuery === '');
+        renderChecklist();
+      });
+
+      clearSearchBtn.addEventListener('click', () => {
+        searchQuery = '';
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        renderChecklist();
+      });
+
+      document.getElementById('btn-clear-filters').addEventListener('click', () => {
+        searchQuery = '';
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        currentChapter = 'all';
+        syncChapterButtons();
+        currentFilter = 'all';
+        filterBtns.forEach(b => {
+          const isAll = b.dataset.filter === 'all';
+          b.classList.toggle('active', isAll);
+          b.classList.toggle('bg-cyan-500/20', isAll);
+          b.classList.toggle('text-cyan-300', isAll);
+          b.classList.toggle('border-cyan-500/40', isAll);
+          b.classList.toggle('text-slate-400', !isAll);
+          b.classList.toggle('border-transparent', !isAll);
+        });
+        renderChecklist();
+      });
+
+      // Exportar & Importar
+      document.getElementById('btn-export').addEventListener('click', exportBackup);
+      document.getElementById('input-import').addEventListener('change', (e) => {
+        importBackup(e.target.files[0]);
+        e.target.value = '';
+      });
+
+      // Modal de Reset
+      const resetModal = document.getElementById('reset-modal');
+      document.getElementById('btn-reset-modal').addEventListener('click', () => {
+        resetModal.classList.remove('hidden');
+        resetModal.classList.add('flex');
+      });
+
+      const closeModal = () => {
+        resetModal.classList.add('hidden');
+        resetModal.classList.remove('flex');
+      };
+
+      document.getElementById('cancel-reset').addEventListener('click', closeModal);
+      resetModal.addEventListener('click', (e) => {
+        if (e.target === resetModal) closeModal();
+      });
+
+      document.getElementById('confirm-reset-zero').addEventListener('click', () => {
+        resetAllToZero();
+        closeModal();
+      });
+
+      document.getElementById('confirm-reset-image').addEventListener('click', () => {
+        resetToImageDefaults(true);
+        closeModal();
+      });
+    });
+  </script>
+</body>
+</html>
