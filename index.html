@@ -1,0 +1,2402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTA VI - Roteiro 100% Completo (PT-BR) | Capítulos 1 a 5</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Oswald -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Tema visual Vice City / Leonida com gradientes neon e vidro fosco */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0618;
+      background-image:
+        radial-gradient(circle at 50% 0%, rgba(255, 42, 133, 0.22) 0%, transparent 55%),
+        radial-gradient(circle at 15% 20%, rgba(0, 240, 255, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 85% 30%, rgba(168, 85, 247, 0.18) 0%, transparent 50%),
+        linear-gradient(180deg, #130826 0%, #090c1a 55%, #060811 100%);
+      background-attachment: fixed;
+      color: #f8fafc;
+      min-height: 100vh;
+    }
+
+    .font-display {
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.03em;
+    }
+
+    .neon-title-pink {
+      color: #fff;
+      text-shadow:
+        0 0 6px rgba(255, 77, 166, 0.9),
+        0 0 18px rgba(255, 0, 128, 0.75),
+        0 0 35px rgba(255, 0, 128, 0.45);
+    }
+
+    .neon-title-cyan {
+      color: #67e8f9;
+      text-shadow:
+        0 0 8px rgba(34, 211, 238, 0.7),
+        0 0 20px rgba(6, 182, 212, 0.4);
+    }
+
+    .vice-card {
+      background: rgba(17, 19, 36, 0.78);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.22);
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    .custom-checkbox {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 1.35rem;
+      height: 1.35rem;
+      min-width: 1.35rem;
+      border-radius: 0.375rem;
+      border: 2px solid #22d3ee;
+      background-color: rgba(15, 23, 42, 0.7);
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 8px rgba(34, 211, 238, 0.2);
+    }
+
+    .custom-checkbox:hover {
+      border-color: #67e8f9;
+      box-shadow: 0 0 12px rgba(34, 211, 238, 0.45);
+    }
+
+    .custom-checkbox:checked {
+      background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);
+      border-color: #f472b6;
+      box-shadow: 0 0 12px rgba(236, 72, 153, 0.65);
+    }
+
+    .custom-checkbox:checked::before {
+      content: "";
+      width: 0.75rem;
+      height: 0.75rem;
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+      background-color: #ffffff;
+    }
+
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #0b0618; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #ec4899; }
+  </style>
+</head>
+<body class="antialiased selection:bg-pink-500 selection:text-white pb-14">
+
+  <div class="relative overflow-hidden border-b border-pink-500/20">
+    <div class="max-w-[1600px] mx-auto px-4 sm:px-6 pt-7 pb-6 relative z-10">
+
+      <!-- Cabeçalho Principal -->
+      <header class="text-center mb-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/15 border border-pink-500/30 text-pink-300 text-xs font-semibold uppercase tracking-wider mb-2">
+          <span class="w-2 h-2 rounded-full bg-pink-400 animate-pulse"></span>
+          Checklist Interativo 100% &bull; Capítulos 1 a 5 &bull; Progresso Salvo Automaticamente
+        </div>
+        <div class="mb-2">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-500/15 border border-cyan-400/40 text-cyan-200 text-[11px] font-semibold uppercase tracking-wider">
+            Prévia Ativa &bull; Capítulos 1 a 5
+          </span>
+        </div>
+        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl font-bold uppercase tracking-wide neon-title-pink leading-tight">
+          GTA VI - ROTEIRO 100% COMPLETO (PT-BR)
+        </h1>
+        <p class="font-display text-sm sm:text-xl font-bold uppercase mt-1.5 tracking-wider leading-relaxed">
+          <span class="neon-title-cyan">CAP. 1 KEY LENTO</span>
+          <span class="text-slate-500 mx-1.5">&bull;</span>
+          <span class="text-pink-300">CAP. 2 VICE CITY</span>
+          <span class="text-slate-500 mx-1.5">&bull;</span>
+          <span class="text-emerald-300">CAP. 3 PÂNTANO &amp; FRONTEIRA</span>
+          <span class="text-slate-500 mx-1.5">&bull;</span>
+          <span class="text-amber-300">CAP. 4 PORT GELLHORN</span>
+          <span class="text-slate-500 mx-1.5">&bull;</span>
+          <span class="text-purple-300">CAP. 5 FIM DA LINHA &amp; PÓS-JOGO</span>
+        </p>
+      </header>
+
+      <!-- Cartão do CanaldoBody e Links Oficiais (somente imagem da raiz ./logo-canaldobody.png) -->
+      <section class="vice-card rounded-2xl p-4 sm:p-5 max-w-6xl mx-auto mb-5 border border-cyan-400/30">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+            <div class="relative shrink-0">
+              <img
+                id="creator-logo-img"
+                src="./logo-canaldobody.png"
+                alt="Logo CanaldoBody"
+                class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-pink-400 shadow-[0_0_20px_rgba(236,72,153,0.55)] bg-slate-900"
+              />
+              <div
+                id="creator-logo-fallback"
+                class="hidden w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-cyan-400 bg-gradient-to-br from-pink-600 via-purple-700 to-cyan-600 flex flex-col items-center justify-center shadow-[0_0_20px_rgba(34,211,238,0.45)] select-none"
+              >
+                <span class="font-display text-xl font-bold text-amber-300 leading-none">BODY</span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-white mt-0.5">GTA VI</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-purple-500/20 border border-purple-400/30 text-purple-200 text-[11px] font-semibold uppercase tracking-wider mb-1">
+                Criador &amp; Lives Oficiais
+              </div>
+              <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
+                CanaldoBody
+              </h2>
+              <p class="text-xs sm:text-sm text-slate-300 mt-0.5">
+                Acompanhe as lives, gameplays e cortes do roteiro 100% de GTA VI nas plataformas oficiais.
+              </p>
+            </div>
+          </div>
+
+          <!-- Botões de Redes Sociais com Ícones SVG -->
+          <div class="flex flex-wrap items-center justify-center gap-2.5">
+            <a
+              href="https://www.twitch.tv/canaldobody"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-purple-600/25 hover:bg-purple-600/40 text-purple-200 border border-purple-400/40 text-xs sm:text-sm font-semibold transition shadow-md"
+            >
+              <svg class="w-4 h-4 fill-current text-purple-300 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
+              </svg>
+              <span>Twitch</span>
+            </a>
+
+            <a
+              href="https://youtube.com/@canaldobody1252?si=-vv7swmvvOyjZCaf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-rose-600/25 hover:bg-rose-600/40 text-rose-200 border border-rose-400/40 text-xs sm:text-sm font-semibold transition shadow-md"
+            >
+              <svg class="w-4 h-4 fill-current text-rose-400 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+              <span>YouTube</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/canaldobody/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAad0LXngj9qD3h9N_qv4qJh3TwnjqGjZYmYFSaoFDieMVhowh0ZfMUwbPL2z8w_aem_4HdwNiYaVrocPM4TTvP9oQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-pink-600/25 hover:bg-pink-600/40 text-pink-200 border border-pink-400/40 text-xs sm:text-sm font-semibold transition shadow-md"
+            >
+              <svg class="w-4 h-4 fill-current text-pink-300 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Painel de Progresso Geral, Individual e Controles -->
+      <div class="vice-card rounded-2xl p-4 sm:p-5 max-w-6xl mx-auto">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+          <div class="flex items-center gap-2.5">
+            <span class="text-sm sm:text-base font-semibold text-slate-200">Progresso Total (Capítulos 1 a 5)</span>
+            <span id="badge-complete" class="hidden px-2.5 py-0.5 text-xs font-bold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+              100% CONCLUÍDO!
+            </span>
+          </div>
+          <div class="flex items-baseline gap-2">
+            <span id="global-count" class="text-sm text-cyan-300 font-medium">0 / 0 concluídos</span>
+            <span id="global-percent" class="font-display text-2xl sm:text-3xl font-bold text-pink-400">0%</span>
+          </div>
+        </div>
+
+        <div class="w-full h-3.5 bg-slate-900/90 rounded-full overflow-hidden p-0.5 border border-slate-700/70 mb-4">
+          <div id="global-progress-bar" class="h-full rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 transition-all duration-500 ease-out shadow-[0_0_12px_rgba(236,72,153,0.7)]" style="width: 0%"></div>
+        </div>
+
+        <!-- Cartões individuais por capítulo -->
+        <div id="chapter-progress-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-5"></div>
+
+        <!-- Barra de Ferramentas e Filtros -->
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-wrap items-center gap-1.5" id="chapter-filter-group">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 mr-1">Capítulo:</span>
+            <button data-chapter="all" type="button" class="ch-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition cursor-pointer bg-pink-500/25 text-pink-200 border border-pink-500/50">
+              Todos (1–5)
+            </button>
+            <button data-chapter="ch1" type="button" class="ch-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition cursor-pointer bg-slate-900/80 text-slate-300 hover:text-white border border-slate-700/80">
+              Cap. 1: Key Lento
+            </button>
+            <button data-chapter="ch2" type="button" class="ch-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition cursor-pointer bg-slate-900/80 text-slate-300 hover:text-white border border-slate-700/80">
+              Cap. 2: Vice City
+            </button>
+            <button data-chapter="ch3" type="button" class="ch-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition cursor-pointer bg-slate-900/80 text-slate-300 hover:text-white border border-slate-700/80">
+              Cap. 3: Pântano &amp; Fronteira
+            </button>
+            <button data-chapter="ch4" type="button" class="ch-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition cursor-pointer bg-slate-900/80 text-slate-300 hover:text-white border border-slate-700/80">
+              Cap. 4: Port Gellhorn
+            </button>
+            <button data-chapter="ch5" type="button" class="ch-btn px-3 py-1.5 rounded-xl text-xs font-semibold transition cursor-pointer bg-slate-900/80 text-slate-300 hover:text-white border border-slate-700/80">
+              Cap. 5: Fim da Linha
+            </button>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 flex-1">
+              <div class="relative flex-1 max-w-md">
+                <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Buscar missão, veículo, colecionável..."
+                  class="w-full pl-10 pr-8 py-2 bg-slate-900/80 border border-slate-700 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 rounded-xl text-sm text-slate-100 placeholder-slate-400 outline-none transition"
+                />
+                <button id="clear-search" type="button" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white p-1" title="Limpar busca">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+              </div>
+
+              <div class="inline-flex flex-wrap rounded-xl bg-slate-900/80 p-1 border border-slate-700/80 self-start sm:self-auto" role="group">
+                <button data-filter="all" type="button" class="filter-btn active px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+                  Todos
+                </button>
+                <button data-filter="pending" type="button" class="filter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-slate-200 transition border border-transparent">
+                  Pendentes
+                </button>
+                <button data-filter="completed" type="button" class="filter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-slate-200 transition border border-transparent">
+                  Concluídos
+                </button>
+                <button data-filter="missable" type="button" class="filter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-amber-300/85 hover:text-amber-200 transition border border-transparent">
+                  ⏳ Perdíveis
+                </button>
+                <button data-filter="trophies" type="button" class="filter-btn px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-purple-300/90 hover:text-purple-200 transition border border-transparent">
+                  🏆 Troféus
+                </button>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2">
+              <button id="btn-export" type="button" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-cyan-300 border border-cyan-500/30 text-xs sm:text-sm font-medium transition cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Exportar JSON
+              </button>
+
+              <label class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-purple-300 border border-purple-500/30 text-xs sm:text-sm font-medium transition cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                Importar Backup
+                <input type="file" id="input-import" accept=".json" class="hidden" />
+              </label>
+
+              <button id="btn-reset-modal" type="button" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-rose-950/60 hover:bg-rose-900/70 text-rose-300 border border-rose-500/30 text-xs sm:text-sm font-medium transition cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                Resetar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grade Principal dos Capítulos em Sequência -->
+  <main class="max-w-[1600px] mx-auto px-4 sm:px-6 mt-6 space-y-10">
+    <!-- Painel de Troféus Vinculados -->
+    <section id="trophies-linked-panel" class="vice-card rounded-2xl p-5 border border-amber-400/35 space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-700/70 pb-3">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-300">Rastreamento Bidirecional</span>
+          <h2 class="font-display text-2xl font-bold uppercase text-white">Troféus Vinculados &amp; O Que Falta Fazer</h2>
+          <p class="text-xs text-slate-400 mt-0.5">
+            Clique em um troféu para destacar abaixo as missões e tarefas que alimentam o progresso dele.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span id="trophies-summary-badge" class="text-xs sm:text-sm font-semibold px-3 py-1 rounded-full bg-amber-500/15 text-amber-200 border border-amber-400/35">
+            0 / 0 concluídos
+          </span>
+          <button id="btn-clear-trophy-selection" type="button" class="hidden px-3 py-1.5 rounded-xl bg-pink-500/20 hover:bg-pink-500/30 text-pink-200 border border-pink-400/40 text-xs font-semibold cursor-pointer">
+            Limpar Destaque
+          </button>
+        </div>
+      </div>
+      <div id="trophies-linked-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3.5"></div>
+    </section>
+
+    <div id="chapters-container" class="space-y-10"></div>
+
+    <div id="empty-state" class="hidden text-center py-16 vice-card rounded-2xl mt-4">
+      <p class="text-lg font-medium text-slate-300">Nenhum item encontrado com os filtros atuais.</p>
+      <button id="btn-clear-filters" type="button" class="mt-3 px-4 py-2 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 text-sm font-medium hover:bg-cyan-500/30 transition cursor-pointer">
+        Limpar busca e filtros
+      </button>
+    </div>
+  </main>
+
+  <!-- Modal de Imagem de Referência -->
+  <div id="image-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="vice-card rounded-2xl max-w-2xl w-full p-5 border border-cyan-400/40 shadow-2xl">
+      <div class="flex items-center justify-between gap-3 mb-3">
+        <h3 id="image-modal-title" class="font-display text-xl font-bold uppercase text-cyan-300">Referência Visual</h3>
+        <button id="close-image-modal" type="button" class="px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm cursor-pointer">✕ Fechar</button>
+      </div>
+      <img id="image-modal-img" src="" alt="" class="w-full max-h-[70vh] object-contain rounded-xl bg-slate-950 border border-slate-800" />
+      <p id="image-modal-caption" class="text-xs sm:text-sm text-slate-300 mt-3"></p>
+    </div>
+  </div>
+
+  <!-- Modal Customizado para Resetar Progresso -->
+  <div id="reset-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div class="vice-card rounded-2xl max-w-md w-full p-6 border border-pink-500/40 shadow-2xl">
+      <div class="flex items-center gap-3 text-rose-400 mb-3">
+        <div class="p-2.5 rounded-xl bg-rose-500/15 border border-rose-500/30">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold uppercase text-white tracking-wide">Resetar Progresso</h3>
+      </div>
+      <p class="text-sm text-slate-300 leading-relaxed mb-5">
+        Como você deseja redefinir o progresso dos Capítulos 1 a 5?
+      </p>
+      <div class="flex flex-col gap-2.5">
+        <button id="confirm-reset-zero" type="button" class="w-full py-2.5 px-4 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-semibold text-sm transition cursor-pointer shadow-lg shadow-rose-600/25">
+          Zerar Tudo (0% - Nenhum marcado)
+        </button>
+        <button id="confirm-reset-image" type="button" class="w-full py-2.5 px-4 rounded-xl bg-purple-600/80 hover:bg-purple-500 text-white font-semibold text-sm transition cursor-pointer border border-purple-400/30">
+          Restaurar Estado Inicial das Imagens
+        </button>
+        <button id="cancel-reset" type="button" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-sm transition cursor-pointer mt-1">
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de Notificação -->
+  <div id="toast" class="fixed bottom-5 right-5 z-50 translate-y-20 opacity-0 pointer-events-none transition-all duration-300">
+    <div class="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-slate-900/95 border border-cyan-400/50 text-slate-100 shadow-xl backdrop-blur-md text-sm font-medium">
+      <span id="toast-icon" class="text-cyan-400">✓</span>
+      <span id="toast-msg">Ação concluída!</span>
+    </div>
+  </div>
+
+  <script>
+    // Chaves de persistência e migração para manter o progresso em atualizações do index.html
+    const STORAGE_KEY = 'gtavi_roteiro_100_cap1_a_5_v2';
+    const PREV_STORAGE_KEYS = [
+      'gtavi_roteiro_100_cap1_a_5_v1',
+      'gtavi_roteiro_100_cap1_a_4_v1',
+      'gtavi_roteiro_100_v3',
+      'gtavi_roteiro_100_v2',
+      'gtavi_cap1_keylento_checklist_v1'
+    ];
+    const DEFAULT_LOGO_PATH = './logo-canaldobody.png';
+
+    // Estrutura auditada e organizada dos 5 capítulos (Capítulos 1 a 5)
+    const CHAPTERS_DATA = [
+      {
+        id: 'ch1',
+        numberLabel: 'CAPÍTULO 1',
+        title: 'KEY LENTO',
+        accentClass: 'text-cyan-300',
+        barClass: 'from-cyan-400 to-pink-500',
+        columns: [
+          {
+            column: 1,
+            sections: [
+              {
+                id: 'sec-1a',
+                title: 'SEÇÃO 1A: MISSÕES PRINCIPAIS',
+                isMissable: false,
+                items: [
+                  { id: '1a-1', text: 'Prólogo', defaultChecked: false },
+                  { id: '1a-2', text: 'Fui pescar', defaultChecked: false },
+                  { id: '1a-3', text: 'Prepare-se', defaultChecked: false },
+                  { id: '1a-4', text: 'Apenas um arranhão', defaultChecked: false },
+                  { id: '1a-5', text: 'Taxas de laboratório', defaultChecked: false },
+                  { id: '1a-6', text: 'Atenção indesejada', defaultChecked: false },
+                  { id: '1a-7', text: 'Tubulação', defaultChecked: false },
+                  { id: '1a-8', text: 'Ei, Arnold! (Fazer Save Antes)', defaultChecked: false },
+                  { id: '1a-9', text: 'Sonhos na Ilha', defaultChecked: false },
+                  { id: '1a-10', text: 'Feng Shui', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'sec-1b',
+                title: 'SEÇÃO 1B: TAREFAS PERDÍVEIS (CAP. 1)',
+                isMissable: true,
+                missableLabel: 'Perdível antes da chegada da Lucia / saída de Key Lento',
+                items: [
+                  { id: '1b-1', text: 'Compre o rum da Shirley', defaultChecked: false },
+                  { id: '1b-2', text: 'Roube a scooter da Shirley', defaultChecked: false },
+                  { id: '1b-3', text: 'Reformar a casa de Jason (arte + estrutura)', defaultChecked: false },
+                  { id: '1b-4', text: 'Comprar presentes para Lucia (colar + flores)', defaultChecked: false },
+                  { id: '1b-5', text: 'Mudar visual de Jason (cabelo + roupa)', defaultChecked: false },
+                  { id: '1b-6', text: 'Reabastecer despensa', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 2,
+            sections: [
+              {
+                id: 'sec-2a',
+                title: 'SEÇÃO 2A: DADOS DO MAPA & ATIVIDADES',
+                isMissable: false,
+                items: [
+                  { id: '2a-1', text: 'Desbravar 100% do mapa de Key Lento', defaultChecked: true },
+                  { id: '2a-2', text: 'Local de Meditação 1/15 (Casa Jason)', defaultChecked: true },
+                  { id: '2a-3', text: 'Local de Meditação 2/15 (Mirante Sul)', defaultChecked: false },
+                  { id: '2a-4', text: 'Desafio de Pesca com Cal (Vencer)', defaultChecked: false },
+                  { id: '2a-5', text: '1ª Entrega de Veículo para Moses', defaultChecked: false },
+                  { id: '2a-6', text: 'Usar o WAiNK IT 1/100 (Local 1)', defaultChecked: true },
+                  { id: '2a-7', text: 'Visitar Bar da Marina', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'sec-2b',
+                title: 'SEÇÃO 2B: COLECIONÁVEIS DE KEY LENTO',
+                isMissable: false,
+                items: [
+                  { id: '2b-1', text: 'Carta 1/18 (Doca Norte)', defaultChecked: false },
+                  { id: '2b-2', text: 'Carta 2/18 (Loja de Iscas)', defaultChecked: false },
+                  { id: '2b-3', text: 'Carta 3/18 (Farol Velho)', defaultChecked: false },
+                  { id: '2b-4', text: 'Flamingo 1/125 (Quintal Jason)', defaultChecked: false },
+                  { id: '2b-5', text: 'Flamingo 2/125 (Praia Pequena)', defaultChecked: false },
+                  { id: '2b-6', text: 'Flamingo 3/125 (Telhado Motel)', defaultChecked: false },
+                  { id: '2b-7', text: 'Salto Acrobático 1/250 (Ponte Quebrada)', defaultChecked: false },
+                  { id: '2b-8', text: 'Salto Acrobático 2/250 (Rampa de Terra)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 3,
+            sections: [
+              {
+                id: 'sec-3a',
+                title: 'SEÇÃO 3A: CATALOGAR VEÍCULOS (AUTOS ACHADOS)',
+                isMissable: false,
+                items: [
+                  { id: '3a-1', text: 'Dinka Blista', defaultChecked: true },
+                  { id: '3a-2', text: 'Vapid Peyote Gasser', defaultChecked: false },
+                  { id: '3a-3', text: 'Declasse Tulip M-100', defaultChecked: false },
+                  { id: '3a-4', text: 'Karin Futo GTX', defaultChecked: false },
+                  { id: '3a-5', text: 'Western Daemon', defaultChecked: false },
+                  { id: '3a-6', text: 'Imponte Ruiner ZZ-8', defaultChecked: false },
+                  { id: '3a-7', text: 'Annis Hellion', defaultChecked: false },
+                  { id: '3a-8', text: 'Pfister Comet S2 Cabrio', defaultChecked: false },
+                  { id: '3a-9', text: 'Bravado Buffalo STX', defaultChecked: false },
+                  { id: '3a-10', text: 'Obey 8F Drafter', defaultChecked: false },
+                  { id: '3a-11', text: 'Pegassi Torero XO', defaultChecked: false },
+                  { id: '3a-12', text: 'Coil Raiden', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'sec-3b',
+                title: 'SEÇÃO 3B: APP SCOOTER BROS (REGISTRAR X/10)',
+                isMissable: false,
+                items: [
+                  { id: '3b-1', text: 'Pegassi Faggio Sport', defaultChecked: true },
+                  { id: '3b-2', text: 'Nagasaki Shinobi', defaultChecked: false },
+                  { id: '3b-3', text: 'Maibatsu Sanchez', defaultChecked: false },
+                  { id: '3b-4', text: 'Shitzu PCJ 600', defaultChecked: false },
+                  { id: '3b-5', text: 'Dinka Akuma', defaultChecked: false },
+                  { id: '3b-6', text: 'Western Cliffhanger', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 4,
+            sections: [
+              {
+                id: 'sec-4a',
+                title: 'SEÇÃO 4A: SERVIÇOS & ENCONTROS',
+                isMissable: false,
+                items: [
+                  { id: '4a-1', text: 'Encontrar o esconderijo do contrabandista (Opcional)', defaultChecked: false },
+                  { id: '4a-2', text: 'Ajudar o pescador perdido (Encontro Aleatório)', defaultChecked: false },
+                  { id: '4a-3', text: 'Entregar pacote misterioso (Missão Extra)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'sec-4b',
+                title: 'SEÇÃO 4B: CONCLUSÃO DO CAPÍTULO 1',
+                isMissable: false,
+                items: [
+                  { id: '4b-1', text: 'Todos os itens da Seção 1B marcados (PERDÍVEIS)', defaultChecked: false, linkedSections: ['sec-1b'] },
+                  { id: '4b-2', text: 'Todos os itens da Seção 2A/2B marcados', defaultChecked: false, linkedSections: ['sec-2a', 'sec-2b'] },
+                  { id: '4b-3', text: 'Todos os itens da Seção 3A/3B marcados', defaultChecked: false, linkedSections: ['sec-3a', 'sec-3b'] },
+                  { id: '4b-4', text: 'Salvar o progresso (Check final)', defaultChecked: false },
+                  { id: '4b-5', text: 'Iniciar missão "Voltando para casa"', defaultChecked: false }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'ch2',
+        numberLabel: 'CAPÍTULO 2',
+        title: 'VICE CITY & ADJACÊNCIAS',
+        accentClass: 'text-pink-300',
+        barClass: 'from-pink-500 to-purple-500',
+        columns: [
+          {
+            column: 1,
+            sections: [
+              {
+                id: 'c2-1a',
+                title: 'SEÇÃO 1A: PRINCIPAIS & ABORDAGENS',
+                isMissable: false,
+                items: [
+                  { id: 'c2-1a-1', text: 'Voltando para casa', defaultChecked: false },
+                  { id: 'c2-1a-2', text: 'Correndo atrás de respostas', defaultChecked: false },
+                  { id: 'c2-1a-3', text: 'Reunião de negócios', defaultChecked: false },
+                  { id: 'c2-1a-4', text: 'Hora da verdade', defaultChecked: false },
+                  { id: 'c2-1a-5', text: 'O novo normal', defaultChecked: false },
+                  { id: 'c2-1a-6', text: 'Infiltração profunda', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c2-1b',
+                title: 'SEÇÃO 1B: MISSÕES DE JASON',
+                isMissable: false,
+                items: [
+                  { id: 'c2-1b-1', text: 'Lar, doce lar (Vice City)', defaultChecked: false },
+                  { id: 'c2-1b-2', text: 'Ronda noturna', defaultChecked: false },
+                  { id: 'c2-1b-3', text: 'Amigos de ocasião', defaultChecked: false },
+                  { id: 'c2-1b-4', text: 'O contato', defaultChecked: false },
+                  { id: 'c2-1b-5', text: 'Ajustando contas', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c2-1c',
+                title: 'SEÇÃO 1C: MISSÕES CONJUNTAS & HEISTS',
+                isMissable: false,
+                items: [
+                  { id: 'c2-1c-1', text: 'Plano de fuga', defaultChecked: false },
+                  { id: 'c2-1c-2', text: 'O grande assalto (Primeira Parte)', defaultChecked: false },
+                  { id: 'c2-1c-3', text: 'O grande assalto (Ação Final)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c2-1d',
+                title: 'SEÇÃO 1D: TAREFAS PERDÍVEIS (CAP. 2)',
+                isMissable: true,
+                missableLabel: 'Perdível antes de iniciar "Mudança de ares"',
+                items: [
+                  { id: 'c2-1d-1', text: 'Compromissos secundários, favores e objetivos com ícone de ampulheta no mapa', defaultChecked: false },
+                  { id: 'c2-1d-2', text: 'Reservas financeiras e tarefas paralelas da virada de capítulo (antes de "Mudança de ares")', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 2,
+            sections: [
+              {
+                id: 'c2-2a',
+                title: 'SEÇÃO 2A: VICE CITY REAL ESTATE (GARAGENS X/8)',
+                isMissable: false,
+                items: [
+                  { id: 'c2-2a-1', text: 'Comprar 1ª Garagem (Little Haiti)', defaultChecked: false },
+                  { id: 'c2-2a-2', text: 'Comprar 2ª Garagem (Ocean Beach)', defaultChecked: false },
+                  { id: 'c2-2a-3', text: 'Comprar 3ª Garagem (Downtown)', defaultChecked: false },
+                  { id: 'c2-2a-4', text: 'Comprar 4ª Garagem (Starfish Island)', defaultChecked: false },
+                  { id: 'c2-2a-5', text: 'Comprar 5ª Garagem (Vice Point)', defaultChecked: false },
+                  { id: 'c2-2a-6', text: 'Comprar 6ª Garagem (Leaf Links)', defaultChecked: false },
+                  { id: 'c2-2a-7', text: 'Comprar 7ª Garagem (Airport)', defaultChecked: false },
+                  { id: 'c2-2a-8', text: 'Comprar 8ª Garagem (Malibu Club Area)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c2-2b',
+                title: 'SEÇÃO 2B: ATIVIDADES & DESAFIOS URBANOS',
+                isMissable: false,
+                items: [
+                  { id: 'c2-2b-1', text: 'Estande de Tiro: Medalha de Ouro (Pistola)', defaultChecked: false },
+                  { id: 'c2-2b-2', text: 'Estande de Tiro: Medalha de Ouro (SMG)', defaultChecked: false },
+                  { id: 'c2-2b-3', text: 'Corrida de Rua 1/10 (Little Haiti)', defaultChecked: false },
+                  { id: 'c2-2b-4', text: 'Corrida de Rua 2/10 (Ocean Beach)', defaultChecked: false },
+                  { id: 'c2-2b-5', text: 'Corrida de Drone Top Fun 1/4', defaultChecked: false },
+                  { id: 'c2-2b-6', text: 'Fliperama Zerado (QUB3D)', defaultChecked: false },
+                  { id: 'c2-2b-7', text: 'Boliche (Kolt & Associates)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 3,
+            sections: [
+              {
+                id: 'c2-3a',
+                title: 'SEÇÃO 3A: COLECIONÁVEIS DE VICE CITY',
+                isMissable: false,
+                items: [
+                  { id: 'c2-3a-1', text: 'Carta 4/18 (Little Haiti - Oficina)', defaultChecked: false },
+                  { id: 'c2-3a-2', text: 'Carta 5/18 (Ocean View Hotel)', defaultChecked: false },
+                  { id: 'c2-3a-3', text: 'Carta 6/18 (Starfish Island - Mansão)', defaultChecked: false },
+                  { id: 'c2-3a-4', text: 'Carta 7/18 (Aeroporto Internacional)', defaultChecked: false },
+                  { id: 'c2-3a-5', text: 'Carta 8/18 (Malibu Club)', defaultChecked: false },
+                  { id: 'c2-3a-7', text: 'Flamingo 4/125 (Little Havana)', defaultChecked: false },
+                  { id: 'c2-3a-8', text: 'Flamingo 5/125 (Washington Beach)', defaultChecked: false },
+                  { id: 'c2-3a-9', text: 'Flamingo 6/125 (Vice Point)', defaultChecked: false },
+                  { id: 'c2-3a-10', text: 'Flamingo 7/125 (Leaf Links Golf)', defaultChecked: false },
+                  { id: 'c2-3a-11', text: 'Flamingo 8/125 (VCN Building)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c2-3b',
+                title: 'SEÇÃO 3B: EXPLORAÇÃO & MEDITAÇÃO',
+                isMissable: false,
+                items: [
+                  { id: 'c2-3b-1', text: '100% do Mapa de Vice City', defaultChecked: true },
+                  { id: 'c2-3b-2', text: 'Local de Meditação 3/15 (Farol de Ocean Beach)', defaultChecked: true },
+                  { id: 'c2-3b-3', text: 'Local de Meditação 4/15 (Parque Little Havana)', defaultChecked: false },
+                  { id: 'c2-3b-4', text: 'Local de Meditação 5/15 (Ponte Starfish)', defaultChecked: false },
+                  { id: 'c2-3b-5', text: 'Tag WAiNK 2-10/100', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 4,
+            sections: [
+              {
+                id: 'c2-4a',
+                title: 'SEÇÃO 4A: OPERAÇÕES DE GANGUES (ASSAULT X/4)',
+                isMissable: false,
+                items: [
+                  { id: 'c2-4a-1', text: 'Assaltar Esconderijo Vagos (Little Havana)', defaultChecked: false },
+                  { id: 'c2-4a-2', text: 'Assaltar Esconderijo Marabunta Grande (Little Haiti)', defaultChecked: false },
+                  { id: 'c2-4a-3', text: 'Assaltar Operação de Tráfico (Porto)', defaultChecked: false },
+                  { id: 'c2-4a-4', text: 'Assaltar Cofre de Gangue (Docks)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c2-4b',
+                title: 'SEÇÃO 4B: ECONOMIA & VEÍCULOS RAROS',
+                isMissable: false,
+                items: [
+                  { id: 'c2-4b-1', text: 'Lavar $100.000 em Notas Marcadas', defaultChecked: false },
+                  { id: 'c2-4b-2', text: 'Vender $50.000 em Joias', defaultChecked: false },
+                  { id: 'c2-4b-3', text: 'Vender 5 Veículos Roubados', defaultChecked: false },
+                  { id: 'c2-4b-4', text: 'Descobrir 3 Veículos Únicos (ex: Infernus Clássico, Cheetah, Comet Retro)', defaultChecked: false },
+                  { id: 'c2-4b-5', text: '10 Veículos no App Scooter Bros', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c2-4c',
+                title: 'SEÇÃO 4C: CONCLUSÃO DO CAPÍTULO 2',
+                isMissable: false,
+                items: [
+                  { id: 'c2-4c-1', text: 'Todos os itens da Seção 1A-1D marcados (incl. Perdíveis)', defaultChecked: false, linkedSections: ['c2-1a', 'c2-1b', 'c2-1c', 'c2-1d'] },
+                  { id: 'c2-4c-2', text: 'Todos os itens da Seção 2A-2B marcados', defaultChecked: false, linkedSections: ['c2-2a', 'c2-2b'] },
+                  { id: 'c2-4c-3', text: 'Todos os itens da Seção 3A-3B marcados', defaultChecked: false, linkedSections: ['c2-3a', 'c2-3b'] },
+                  { id: 'c2-4c-4', text: 'Todos os itens da Seção 4A-4B marcados', defaultChecked: false, linkedSections: ['c2-4a', 'c2-4b'] },
+                  { id: 'c2-4c-5', text: 'Salvar o progresso', defaultChecked: false },
+                  { id: 'c2-4c-6', text: 'Iniciar missão "Mudança de ares"', defaultChecked: false }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'ch3',
+        numberLabel: 'CAPÍTULO 3',
+        title: 'PÂNTANO E FRONTEIRA',
+        accentClass: 'text-emerald-300',
+        barClass: 'from-emerald-400 to-cyan-400',
+        columns: [
+          {
+            column: 1,
+            sections: [
+              {
+                id: 'c3-1a',
+                title: 'SEÇÃO 1A: MISSÕES DO PÂNTANO',
+                isMissable: false,
+                items: [
+                  { id: 'c3-1a-1', text: 'Mudança de ares', defaultChecked: false },
+                  { id: 'c3-1a-2', text: 'O pântano ferve', defaultChecked: false },
+                  { id: 'c3-1a-3', text: 'Estranhos no bayou', defaultChecked: false },
+                  { id: 'c3-1a-4', text: 'Lar, doce (novo) lar', defaultChecked: false },
+                  { id: 'c3-1a-5', text: 'Caça às bruxas', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c3-1b',
+                title: 'SEÇÃO 1B: MISSÕES DA FRONTEIRA',
+                isMissable: false,
+                items: [
+                  { id: 'c3-1b-1', text: 'Cruzando a linha', defaultChecked: false },
+                  { id: 'c3-1b-2', text: 'O cartel local', defaultChecked: false },
+                  { id: 'c3-1b-3', text: 'Areia movediça', defaultChecked: false },
+                  { id: 'c3-1b-4', text: 'O último recurso', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c3-1c',
+                title: 'SEÇÃO 1C: TAREFAS PERDÍVEIS (CAP. 3)',
+                isMissable: true,
+                missableLabel: 'Perdível antes de iniciar "Ataque ao Comboio"',
+                items: [
+                  { id: 'c3-1c-1', text: 'Favores locais e encontros com ampulheta no pântano/fronteira antes de sair da região', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 2,
+            sections: [
+              {
+                id: 'c3-2a',
+                title: 'SEÇÃO 2A: DESAFIOS DOS INTERIORES RURAIS',
+                isMissable: false,
+                items: [
+                  { id: 'c3-2a-1', text: 'Caçada de Animal Lendário: Aligátor Albino', defaultChecked: true },
+                  { id: 'c3-2a-2', text: 'Desafio de Pesca: Peixe-espada Gigante', defaultChecked: false },
+                  { id: 'c3-2a-3', text: 'Corrida de Rua 3/10 (Estradas de Terra)', defaultChecked: false },
+                  { id: 'c3-2a-4', text: 'Corrida de Drone Top Fun 2/4 (Fazenda Eólica)', defaultChecked: false },
+                  { id: 'c3-2a-5', text: 'Estande de Tiro: Medalha de Ouro (Rifle)', defaultChecked: false },
+                  { id: 'c3-2a-6', text: 'Estande de Tiro: Medalha de Ouro (Escopeta)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c3-2b',
+                title: 'SEÇÃO 2B: SERVIÇOS & MEDITAÇÃO RURAL',
+                isMissable: false,
+                items: [
+                  { id: 'c3-2b-1', text: 'Entrega de Caminhão Roubado (2/5)', defaultChecked: false },
+                  { id: 'c3-2b-2', text: 'Ajuda ao Viajante Perdido (Encontro 2/3)', defaultChecked: false },
+                  { id: 'c3-2b-3', text: 'Local de Meditação 6/15 (Cabana do Eremita)', defaultChecked: false },
+                  { id: 'c3-2b-4', text: 'Local de Meditação 7/15 (Topo da Colina Sagrada)', defaultChecked: false },
+                  { id: 'c3-2b-5', text: 'Local de Meditação 8/15 (Ponte da Ferrovia)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 3,
+            sections: [
+              {
+                id: 'c3-3a',
+                title: 'SEÇÃO 3A: COLECIONÁVEIS (ÁREAS DO INTERIOR)',
+                isMissable: false,
+                items: [
+                  { id: 'c3-3a-1', text: 'Carta 9/18 (Cabana Abandonada)', defaultChecked: true },
+                  { id: 'c3-3a-2', text: 'Carta 10/18 (Posto de Gasolina da Fronteira)', defaultChecked: false },
+                  { id: 'c3-3a-3', text: 'Carta 11/18 (Fazenda de Gado)', defaultChecked: false },
+                  { id: 'c3-3a-4', text: 'Carta 12/18 (Tribo Seminole)', defaultChecked: false },
+                  { id: 'c3-3a-6', text: 'Flamingo 9/125 (Pântano Profundo)', defaultChecked: false },
+                  { id: 'c3-3a-7', text: 'Flamingo 10/125 (Posto de Pesca)', defaultChecked: false },
+                  { id: 'c3-3a-8', text: 'Flamingo 11/125 (Fazenda Abandonada)', defaultChecked: false },
+                  { id: 'c3-3a-9', text: 'Flamingo 12/125 (Cruzeiro do Pântano)', defaultChecked: false },
+                  { id: 'c3-3a-11', text: 'Tag WAiNK 11-20/100', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c3-3b',
+                title: 'SEÇÃO 3B: VEÍCULOS EXCLUSIVOS DO PÂNTANO',
+                isMissable: false,
+                items: [
+                  { id: 'c3-3b-1', text: 'Catalogar Air Coaster', defaultChecked: true },
+                  { id: 'c3-3b-2', text: 'Catalogar Caminhão Monstro (Sandking SWB)', defaultChecked: true },
+                  { id: 'c3-3b-3', text: 'Catalogar Trator (Fieldmaster)', defaultChecked: false },
+                  { id: 'c3-3b-5', text: 'Catalogar Quadriciclo (Rancher XL)', defaultChecked: false },
+                  { id: 'c3-3b-6', text: 'Registrar Hotknife no App Scooter Bros', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 4,
+            sections: [
+              {
+                id: 'c3-4a',
+                title: 'SEÇÃO 4A: OPERAÇÕES DE ROUBO (HEISTS X/5)',
+                isMissable: false,
+                items: [
+                  { id: 'c3-4a-1', text: 'Assalto à Loja de Conveniência (Highway 27)', defaultChecked: false },
+                  { id: 'c3-4a-2', text: 'Assalto a Caixa Eletrônico (Oculto)', defaultChecked: false },
+                  { id: 'c3-4a-3', text: 'Roubo a Carro-Forte (Área Rural)', defaultChecked: false },
+                  { id: 'c3-4a-4', text: 'Assalto a Posto de Correios (Smalltown)', defaultChecked: false },
+                  { id: 'c3-4a-5', text: 'Invasão a Depósito de Armas', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c3-4b',
+                title: 'SEÇÃO 4B: MARCOS DE PROGRESSO & MUDANÇA',
+                isMissable: false,
+                items: [
+                  { id: 'c3-4b-1', text: 'Lavar $200.000 em Notas Marcadas', defaultChecked: false },
+                  { id: 'c3-4b-2', text: 'Vender $75.000 em Joias', defaultChecked: false },
+                  { id: 'c3-4b-3', text: '15 Veículos no App Scooter Bros', defaultChecked: false },
+                  { id: 'c3-4b-4', text: '50% do Mapa Total Descoberto', defaultChecked: false },
+                  { id: 'c3-4b-6', text: 'Concluir Missão "Reunião de Cúpula"', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c3-4c',
+                title: 'SEÇÃO 4C: CONCLUSÃO DO CAPÍTULO 3',
+                isMissable: false,
+                items: [
+                  { id: 'c3-4c-1', text: 'Todos os itens da Seção 1A-1C marcados (incl. Perdíveis)', defaultChecked: false, linkedSections: ['c3-1a', 'c3-1b', 'c3-1c'] },
+                  { id: 'c3-4c-2', text: 'Todos os itens da Seção 2A-2B marcados', defaultChecked: false, linkedSections: ['c3-2a', 'c3-2b'] },
+                  { id: 'c3-4c-3', text: 'Todos os itens da Seção 3A-3B marcados', defaultChecked: false, linkedSections: ['c3-3a', 'c3-3b'] },
+                  { id: 'c3-4c-4', text: 'Todos os itens da Seção 4A-4B marcados', defaultChecked: false, linkedSections: ['c3-4a', 'c3-4b'] },
+                  { id: 'c3-4c-5', text: 'Salvar o progresso', defaultChecked: false },
+                  { id: 'c3-4c-6', text: 'Iniciar missão "Ataque ao Comboio"', defaultChecked: false }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'ch4',
+        numberLabel: 'CAPÍTULO 4',
+        title: 'PORT GELLHORN & INDÚSTRIA',
+        accentClass: 'text-amber-300',
+        barClass: 'from-amber-400 to-pink-500',
+        columns: [
+          {
+            column: 1,
+            sections: [
+              {
+                id: 'c4-1a',
+                title: 'SEÇÃO 1A: MISSÕES PORT GELLHORN (HISTÓRIA JASON & LUCIA)',
+                isMissable: false,
+                items: [
+                  { id: 'c4-1a-1', text: 'Ataque ao comboio', defaultChecked: false },
+                  { id: 'c4-1a-2', text: 'Negócios arriscados', defaultChecked: false },
+                  { id: 'c4-1a-3', text: 'Jogo de poder', defaultChecked: false },
+                  { id: 'c4-1a-4', text: 'Conexões industriais', defaultChecked: false },
+                  { id: 'c4-1a-5', text: 'O cerco', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c4-1b',
+                title: 'SEÇÃO 1B: MISSÕES DA INDÚSTRIA',
+                isMissable: false,
+                items: [
+                  { id: 'c4-1b-1', text: 'Suborno e traição', defaultChecked: false },
+                  { id: 'c4-1b-2', text: 'Linha de montagem', defaultChecked: false },
+                  { id: 'c4-1b-3', text: 'Fuga pelo duto', defaultChecked: false },
+                  { id: 'c4-1b-4', text: 'Ajuste final', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c4-1c',
+                title: 'SEÇÃO 1C: TAREFAS PERDÍVEIS (CAP. 4)',
+                isMissable: true,
+                missableLabel: 'Perdível antes de iniciar "Retorno a Vice City"',
+                items: [
+                  { id: 'c4-1c-1', text: 'Contratos temporários e encontros com ampulheta em Port Gellhorn antes da virada final', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 2,
+            sections: [
+              {
+                id: 'c4-2a',
+                title: 'SEÇÃO 2A: DESAFIOS DO PORTO',
+                isMissable: false,
+                items: [
+                  { id: 'c4-2a-1', text: 'Corrida de Rua 4/10 (Área Portuária)', defaultChecked: false },
+                  { id: 'c4-2a-2', text: 'Corrida de Drone Top Fun 3/4 (Pátio de Contêineres)', defaultChecked: false },
+                  { id: 'c4-2a-3', text: 'Estande de Tiro: Medalha de Ouro (Pesada)', defaultChecked: false },
+                  { id: 'c4-2a-4', text: 'Estande de Tiro: Medalha de Ouro (Explosivos)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c4-2b',
+                title: 'SEÇÃO 2B: SERVIÇOS & MEDITAÇÃO INDUSTRIAL',
+                isMissable: false,
+                items: [
+                  { id: 'c4-2b-1', text: 'Entrega de Veículo Especial (Moses) 3/5', defaultChecked: false },
+                  { id: 'c4-2b-2', text: 'Auxílio ao Mecânico Perdido (Encontro 3/3)', defaultChecked: false },
+                  { id: 'c4-2b-3', text: 'Local de Meditação 9/15 (Topo do Guindaste)', defaultChecked: false },
+                  { id: 'c4-2b-4', text: 'Local de Meditação 10/15 (Telhado da Fábrica)', defaultChecked: false },
+                  { id: 'c4-2b-5', text: 'Local de Meditação 11/15 (Armazém Abandonado)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 3,
+            sections: [
+              {
+                id: 'c4-3a',
+                title: 'SEÇÃO 3A: COLECIONÁVEIS (ÁREAS ESPECÍFICAS)',
+                isMissable: false,
+                items: [
+                  { id: 'c4-3a-1', text: 'Carta 13/18 (Escritório do Porto)', defaultChecked: false },
+                  { id: 'c4-3a-2', text: 'Carta 14/18 (Fábrica de Enlatados)', defaultChecked: false },
+                  { id: 'c4-3a-3', text: 'Carta 15/18 (Ferro-Velho)', defaultChecked: false },
+                  { id: 'c4-3a-4', text: 'Flamingo 13/125 (Porto Gellhorn)', defaultChecked: false },
+                  { id: 'c4-3a-5', text: 'Flamingo 14/125 (Área Industrial)', defaultChecked: false },
+                  { id: 'c4-3a-6', text: 'Flamingo 15/125 (Tanques de Combustível)', defaultChecked: false },
+                  { id: 'c4-3a-7', text: 'Tag WAiNK 21-30/100', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c4-3b',
+                title: 'SEÇÃO 3B: VEÍCULOS EXCLUSIVOS DO PORTO',
+                isMissable: false,
+                items: [
+                  { id: 'c4-3b-1', text: 'Catalogar Caminhão Guindaste (Tow Truck)', defaultChecked: true },
+                  { id: 'c4-3b-2', text: 'Catalogar Empilhadeira (Forklift)', defaultChecked: true },
+                  { id: 'c4-3b-3', text: 'Catalogar Caminhão de Carga (Hauler)', defaultChecked: false },
+                  { id: 'c4-3b-4', text: 'Catalogar Carro de Polícia (Port Gellhorn Cruiser)', defaultChecked: false },
+                  { id: 'c4-3b-5', text: 'Registrar Faggio Mod no App Scooter Bros', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 4,
+            sections: [
+              {
+                id: 'c4-4a',
+                title: 'SEÇÃO 4A: OPERAÇÕES DE GRANDE PORTE (GRAND HEISTS X/5)',
+                isMissable: false,
+                items: [
+                  { id: 'c4-4a-1', text: 'Assalto ao Banco Central de Port Gellhorn', defaultChecked: false },
+                  { id: 'c4-4a-2', text: 'Roubo ao Trem de Carga', defaultChecked: false },
+                  { id: 'c4-4a-3', text: 'Invasão à Base Militar (Opcional)', defaultChecked: false },
+                  { id: 'c4-4a-4', text: 'Assalto à Torre de Controle (Porto)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c4-4b',
+                title: 'SEÇÃO 4B: MARCOS DE PROGRESSO & MUDANÇA',
+                isMissable: false,
+                items: [
+                  { id: 'c4-4b-1', text: 'Lavar $350.000 em Notas Marcadas', defaultChecked: false },
+                  { id: 'c4-4b-2', text: 'Vender $150.000 em Joias', defaultChecked: false },
+                  { id: 'c4-4b-3', text: '20 Veículos no App Scooter Bros', defaultChecked: false },
+                  { id: 'c4-4b-4', text: '75% do Mapa Total Descoberto', defaultChecked: false },
+                  { id: 'c4-4b-5', text: 'Concluir Missão "A Grande Reunião"', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c4-4c',
+                title: 'SEÇÃO 4C: CONCLUSÃO DO CAPÍTULO 4',
+                isMissable: false,
+                items: [
+                  { id: 'c4-4c-1', text: 'Todos os itens da Seção 1A-1C marcados (incl. Perdíveis)', defaultChecked: false, linkedSections: ['c4-1a', 'c4-1b', 'c4-1c'] },
+                  { id: 'c4-4c-2', text: 'Todos os itens da Seção 2A-2B marcados', defaultChecked: false, linkedSections: ['c4-2a', 'c4-2b'] },
+                  { id: 'c4-4c-3', text: 'Todos os itens da Seção 3A-3B marcados', defaultChecked: false, linkedSections: ['c4-3a', 'c4-3b'] },
+                  { id: 'c4-4c-4', text: 'Todos os itens da Seção 4A-4B marcados', defaultChecked: false, linkedSections: ['c4-4a', 'c4-4b'] },
+                  { id: 'c4-4c-5', text: 'Salvar o progresso', defaultChecked: false },
+                  { id: 'c4-4c-6', text: 'Iniciar missão "Retorno a Vice City"', defaultChecked: false }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'ch5',
+        numberLabel: 'CAPÍTULO 5',
+        title: 'O FIM DA LINHA & PÓS-JOGO',
+        accentClass: 'text-purple-300',
+        barClass: 'from-purple-500 to-pink-500',
+        columns: [
+          {
+            column: 1,
+            sections: [
+              {
+                id: 'c5-1a',
+                title: 'SEÇÃO 1A: RETORNO A VICE CITY (CAPÍTULO 5)',
+                isMissable: false,
+                items: [
+                  { id: 'c5-1a-1', text: 'Retorno a Vice City', defaultChecked: false },
+                  { id: 'c5-1a-2', text: 'Acerto de contas final', defaultChecked: false },
+                  { id: 'c5-1a-3', text: 'A última aposta', defaultChecked: false },
+                  { id: 'c5-1a-4', text: 'O cerco derradeiro', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c5-1b',
+                title: 'SEÇÃO 1B: O EPÍLOGO',
+                isMissable: false,
+                items: [
+                  { id: 'c5-1b-1', text: 'O peso da coroa', defaultChecked: false },
+                  { id: 'c5-1b-2', text: 'Escolhas difíceis', defaultChecked: false },
+                  { id: 'c5-1b-3', text: 'Epílogo e Créditos', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 2,
+            sections: [
+              {
+                id: 'c5-2a',
+                title: 'SEÇÃO 2A: DESAFIOS DE VICE CITY (REGIÃO CENTRAL)',
+                isMissable: false,
+                items: [
+                  { id: 'c5-2a-1', text: 'Corrida de Rua 5-7/10', defaultChecked: false },
+                  { id: 'c5-2a-2', text: 'Corrida de Drone 4/4', defaultChecked: false },
+                  { id: 'c5-2a-3', text: 'Estande de Tiro: Ouro (Todas as 6 armas)', defaultChecked: false },
+                  { id: 'c5-2a-4', text: 'Ganhar Desafio Boliche (X/3)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c5-2b',
+                title: 'SEÇÃO 2B: COLECIONÁVEIS FINAIS (GLOBAL)',
+                isMissable: false,
+                items: [
+                  { id: 'c5-2b-1', text: 'Carta 16/18 (Mansão Starfish)', defaultChecked: false },
+                  { id: 'c5-2b-2', text: 'Carta 17/18 (Hotel Ocean View)', defaultChecked: false },
+                  { id: 'c5-2b-3', text: 'Carta 18/18 (WAiNK HQ) - FECHADO!', defaultChecked: false },
+                  { id: 'c5-2b-4', text: 'Flamingo 116-125/125 - FECHADO!', defaultChecked: false },
+                  { id: 'c5-2b-5', text: 'Tag WAiNK 31-100/100 - FECHADO!', defaultChecked: false },
+                  { id: 'c5-2b-6', text: 'Ponto de Meditação 12-15/15 - FECHADO!', defaultChecked: false },
+                  { id: 'c5-2b-7', text: 'Achados Subaquáticos (100%)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 3,
+            sections: [
+              {
+                id: 'c5-3a',
+                title: 'SEÇÃO 3A: VEÍCULOS RAROS & GARAGEM (RUMO AOS 100%)',
+                isMissable: false,
+                items: [
+                  { id: 'c5-3a-1', text: '100 Veículos Catalogados (Total Geral X/100)', defaultChecked: true },
+                  { id: 'c5-3a-3', text: 'Catalogar Infernus Clássico', defaultChecked: false },
+                  { id: 'c5-3a-4', text: 'Catalogar Cheetah Clássico', defaultChecked: false },
+                  { id: 'c5-3a-5', text: 'Catalogar Comet Retro Custom', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c5-3b',
+                title: 'SEÇÃO 3B: MARCOS GLOBAIS (100% TOTAL)',
+                isMissable: false,
+                items: [
+                  { id: 'c5-3b-1', text: '100% do Mapa Descoberto (Total)', defaultChecked: false },
+                  { id: 'c5-3b-2', text: 'US$ 500.000 Lavados (Total)', defaultChecked: false },
+                  { id: 'c5-3b-3', text: 'US$ 200.000 em Joias Vendidas (Total)', defaultChecked: false },
+                  { id: 'c5-3b-4', text: 'US$ 100.000 Gastos em Lojas (Total)', defaultChecked: false },
+                  { id: 'c5-3b-5', text: 'Força Máxima (Jason & Lucia)', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c5-3c',
+                title: 'SEÇÃO 3C: ELIMINAÇÃO DE OPERAÇÕES',
+                isMissable: false,
+                items: [
+                  { id: 'c5-3c-1', text: 'Limpar todas as 20 Operações de Gangues (4/4 regiões)', defaultChecked: false }
+                ]
+              }
+            ]
+          },
+          {
+            column: 4,
+            sections: [
+              {
+                id: 'c5-4a',
+                title: 'SEÇÃO 4A: ATIVIDADES DIVERSAS PÓS-HISTÓRIA',
+                isMissable: false,
+                items: [
+                  { id: 'c5-4a-1', text: 'Completar 50 Eventos Dinâmicos Diferentes', defaultChecked: false },
+                  { id: 'c5-4a-2', text: 'Vencer 30 Corridas de Rua (Total)', defaultChecked: false },
+                  { id: 'c5-4a-3', text: 'Vencer todas as 4 Corridas de Drones', defaultChecked: false },
+                  { id: 'c5-4a-4', text: 'Visitar todos os Pontos de Meditação (15/15)', defaultChecked: false },
+                  { id: 'c5-4a-5', text: 'Registrar 10 veículos no App Scooter Bros', defaultChecked: false },
+                  { id: 'c5-4a-6', text: 'Vender 25 Veículos ao Moses (Total)', defaultChecked: false },
+                  { id: 'c5-4a-7', text: 'Experimentar 25 Atividades Diferentes', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c5-4b',
+                title: 'SEÇÃO 4B: A PLATINA (TROFÉUS)',
+                isMissable: false,
+                items: [
+                  { id: 'c5-4b-1', text: 'Obter todos os Troféus de Bronze', defaultChecked: true },
+                  { id: 'c5-4b-2', text: 'Obter todos os Troféus de Prata', defaultChecked: true },
+                  { id: 'c5-4b-3', text: 'Obter todos os Troféus de Ouro', defaultChecked: false },
+                  { id: 'c5-4b-4', text: 'Atingir 100% de Progresso Geral', defaultChecked: false },
+                  { id: 'c5-4b-5', text: 'DESBLOQUEAR PLATINA: Vice Got a Price!', defaultChecked: false }
+                ]
+              },
+              {
+                id: 'c5-4c',
+                title: 'SEÇÃO 4C: CONCLUSÃO DEFINITIVA',
+                isMissable: false,
+                items: [
+                  { id: 'c5-4c-1', text: 'Todos os Itens dos Capítulos 1-4 marcados', defaultChecked: false, linkedChapters: ['ch1', 'ch2', 'ch3', 'ch4'] },
+                  { id: 'c5-4c-2', text: 'Todos os Itens das Seções 1-3 marcados', defaultChecked: false, linkedSections: ['c5-1a', 'c5-1b', 'c5-2a', 'c5-2b', 'c5-3a', 'c5-3b', 'c5-3c'] },
+                  { id: 'c5-4c-3', text: 'Salvar Jogo (Progresso Total)', defaultChecked: false }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ];
+
+    let checkedState = {};
+    let currentFilter = 'all';
+    let currentChapter = 'all';
+    let searchQuery = '';
+    let selectedTrophyId = null;
+
+    // Lista completa dos 55 troféus de GTA VI em Português do Brasil (1 Platina, 2 Ouro, 6 Prata, 46 Bronze)
+    const LINKED_TROPHIES = [
+      {
+        id: 'tr-just-like-paradise',
+        name: 'Como no Paraíso',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua a missão "Fui pescar" no início de Key Lento.',
+        itemIds: ['1a-2']
+      },
+      {
+        id: 'tr-paradise-lost',
+        name: 'Paraíso Perdido',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua o Capítulo 1 e garanta os favores perdíveis e entregas da ilha.',
+        itemIds: ['1a-1', '1a-2', '1a-3', '1a-4', '1a-5', '1a-6', '1a-7', '1a-8', '1a-9', '1a-10', '4b-1', '4b-2', '4b-3', '4b-5']
+      },
+      {
+        id: 'tr-keylento-missables',
+        name: 'Janela Perdível de Key Lento',
+        grade: 'Bronze',
+        missable: true,
+        tip: 'Faça os favores da Shirley, reforma da casa, presentes e visual antes da chegada da Lucia / saída de Key Lento.',
+        itemIds: ['1b-1', '1b-2', '1b-3', '1b-4', '1b-5', '1b-6']
+      },
+      {
+        id: 'tr-baited-my-tackle',
+        name: 'Isca Fisgada',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Vença Cal no desafio de pesca em Key Lento.',
+        itemIds: ['2a-4']
+      },
+      {
+        id: 'tr-trust',
+        name: 'Confiança',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua a missão "Breakfast Run" e o início da transição para Vice City.',
+        itemIds: ['c2-1a-1', 'c2-1a-2']
+      },
+      {
+        id: 'tr-in-the-beginning',
+        name: 'No Princípio…',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Curta o visual à beira-mar de Ocean Beach e a chegada a Vice City.',
+        itemIds: ['c2-1b-1', 'c2-3b-1', 'c2-3b-2']
+      },
+      {
+        id: 'tr-tits-ass-drug-money',
+        name: 'Grana Pesada e Caos',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua o Capítulo 2 e os estágios do grande assalto urbano.',
+        itemIds: ['c2-1a-3', 'c2-1a-4', 'c2-1a-5', 'c2-1a-6', 'c2-1c-1', 'c2-1c-2', 'c2-1c-3', 'c2-4c-1']
+      },
+      {
+        id: 'tr-cap2-missables',
+        name: 'Janela Perdível do Cap. 2',
+        grade: 'Bronze',
+        missable: true,
+        tip: 'Conclua tarefas com ampulheta e reservas financeiras antes de iniciar "Mudança de ares".',
+        itemIds: ['c2-1d-1', 'c2-1d-2']
+      },
+      {
+        id: 'tr-little-boxes',
+        name: 'Caixinhas de Luxo',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Compre todas as 8 propriedades de garagem pela Vice City Real Estate.',
+        itemIds: ['c2-2a-1', 'c2-2a-2', 'c2-2a-3', 'c2-2a-4', 'c2-2a-5', 'c2-2a-6', 'c2-2a-7', 'c2-2a-8']
+      },
+      {
+        id: 'tr-stick-fiddler',
+        name: 'Mestre do Fliperama',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Zere / conclua um jogo de fliperama.',
+        itemIds: ['c2-2b-6']
+      },
+      {
+        id: 'tr-lets-go-bowling',
+        name: 'Vamos Jogar Boliche',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Jogue e conclua as etapas no boliche Kolt & Associates e desafios da pista.',
+        itemIds: ['c2-2b-7', 'c5-2a-4']
+      },
+      {
+        id: 'tr-ten-pin',
+        name: 'Strike na Pista',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Derrube alvos em drive-by corpo a corpo e conclua os desafios de boliche.',
+        itemIds: ['c2-2b-7', 'c5-2a-4']
+      },
+      {
+        id: 'tr-vice-city-baby',
+        name: 'Vice City, Meu Amor!',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua o Capítulo 3 pelo pântano e região de fronteira.',
+        itemIds: ['c3-1a-1', 'c3-1a-2', 'c3-1a-3', 'c3-1a-4', 'c3-1a-5', 'c3-1b-1', 'c3-1b-2', 'c3-1b-3', 'c3-1b-4', 'c3-4c-1']
+      },
+      {
+        id: 'tr-cap3-missables',
+        name: 'Janela Perdível do Cap. 3',
+        grade: 'Bronze',
+        missable: true,
+        tip: 'Resolva favores e encontros com ampulheta antes de iniciar "Ataque ao Comboio".',
+        itemIds: ['c3-1c-1']
+      },
+      {
+        id: 'tr-fair-game',
+        name: 'Caça Justa',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Cace o animal lendário / único para Bret (Aligátor Albino e caçadas raras).',
+        itemIds: ['c3-2a-1', 'c3-2a-2']
+      },
+      {
+        id: 'tr-road-to-rehabilitation',
+        name: 'Caminho da Reabilitação',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua a linha de missões finais de Andy com a Lucia.',
+        itemIds: ['c3-1a-3', 'c3-1a-5']
+      },
+      {
+        id: 'tr-this-was-no-boat-accident',
+        name: 'Não Foi Acidente de Barco',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua a missão final de Kenton e encontros no pântano/costa.',
+        itemIds: ['c3-1a-2', 'c3-2b-2']
+      },
+      {
+        id: 'tr-the-lone-rider',
+        name: 'O Cavaleiro Solitário',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua a missão final de Billy e encontros na fronteira/interior.',
+        itemIds: ['c3-1b-2', 'c3-1b-4']
+      },
+      {
+        id: 'tr-supply-and-demand',
+        name: 'Oferta e Procura',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua a missão final de Randy e rotas de contrabando/fronteira.',
+        itemIds: ['c3-1b-1', 'c3-1b-3', 'c3-2b-1']
+      },
+      {
+        id: 'tr-spin-on-this',
+        name: 'Sinta a Pressão!',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua a missão final de Tyrone e operações ligadas ao arco.',
+        itemIds: ['c3-1a-4', 'c3-4b-6']
+      },
+      {
+        id: 'tr-top-of-the-world-ma',
+        name: 'No Topo do Mundo, Mãe',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua o Capítulo 4 em Port Gellhorn e na área industrial.',
+        itemIds: ['c4-1a-1', 'c4-1a-2', 'c4-1a-3', 'c4-1a-4', 'c4-1a-5', 'c4-1b-1', 'c4-1b-2', 'c4-1b-3', 'c4-1b-4', 'c4-4c-1']
+      },
+      {
+        id: 'tr-cap4-missables',
+        name: 'Janela Perdível do Cap. 4',
+        grade: 'Bronze',
+        missable: true,
+        tip: 'Conclua contratos temporários e encontros com ampulheta antes de "Retorno a Vice City".',
+        itemIds: ['c4-1c-1']
+      },
+      {
+        id: 'tr-break-the-bank',
+        name: 'Quebrando a Banca',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua o assalto ao cartel e operações de cofre/banco.',
+        itemIds: ['c3-1b-2', 'c4-4a-1']
+      },
+      {
+        id: 'tr-family-matters',
+        name: 'Assuntos de Família',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua a missão "Child\'s Play" e arcos de família/lealdade.',
+        itemIds: ['c2-1b-3', 'c4-1a-3']
+      },
+      {
+        id: 'tr-dwnfall',
+        name: 'QUEDA LIVRE',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua a missão "Headliners" e eventos ligados à mídia/palco.',
+        itemIds: ['c2-1a-4', 'c4-1b-1']
+      },
+      {
+        id: 'tr-hi-jacked',
+        name: 'Sequestro de Alto Risco',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua a operação "VCIA Takedown" e invasões de alto risco.',
+        itemIds: ['c4-1a-5', 'c4-4a-4']
+      },
+      {
+        id: 'tr-snow-storm',
+        name: 'Tempestade Branca',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua "Operation Savage Glory" e o clímax industrial.',
+        itemIds: ['c4-1b-3', 'c4-1b-4', 'c4-4b-5']
+      },
+      {
+        id: 'tr-catch-me-if-you-can',
+        name: 'Se Puder Me Pegar',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Faça uma decolagem / fuga não programada no aeroporto VCIA.',
+        itemIds: ['c2-3a-4', 'c4-4a-4']
+      },
+      {
+        id: 'tr-challenging-tank',
+        name: 'Desafio Blindado',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua o desafio com tanque / veículo militar pesado.',
+        itemIds: ['c4-4a-3', 'c5-1a-4']
+      },
+      {
+        id: 'tr-capital-offense',
+        name: 'Crime Capital',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Destrua / saia arrombando de uma concessionária de veículos em grande estilo.',
+        itemIds: ['c2-4b-4', 'c5-3a-1']
+      },
+      {
+        id: 'tr-sneakthief',
+        name: 'Ladrão Furtivo',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Assalte uma joalheria sem ser detectado e venda joias.',
+        itemIds: ['c2-4b-2', 'c3-4b-2', 'c4-4b-2', 'c5-3b-3']
+      },
+      {
+        id: 'tr-a-classic-blitz-play',
+        name: 'Jogada Clássica de Blitz',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Assalte um carro-forte e escape da polícia.',
+        itemIds: ['c3-4a-3']
+      },
+      {
+        id: 'tr-maximum-withdrawal',
+        name: 'Saque Máximo',
+        grade: 'Prata',
+        missable: false,
+        tip: 'Assalte 5 cofres de banco e escape.',
+        itemIds: ['c4-4a-1', 'c4-4a-2', 'c4-4a-4', 'c5-1a-2']
+      },
+      {
+        id: 'tr-pest-control',
+        name: 'Dedetização',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Assalte operações ilegais de cada gangue e limpe as operações regionais.',
+        itemIds: ['c2-4a-1', 'c2-4a-2', 'c2-4a-3', 'c2-4a-4', 'c5-3c-1']
+      },
+      {
+        id: 'tr-dime-on-the-dollar',
+        name: 'Lucro Limpo',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Lave US$ 250.000 em notas marcadas através dos contatos (e avance até os US$ 500.000 totais).',
+        itemIds: ['c2-4b-1', 'c3-4b-1', 'c4-4b-1', 'c5-3b-2']
+      },
+      {
+        id: 'tr-treat-yo-self',
+        name: 'Hora do Mimo',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Gaste US$ 100.000 em lojas pelo estado de Leonida.',
+        itemIds: ['1b-3', '1b-4', 'c5-3b-4']
+      },
+      {
+        id: 'tr-whip-it-good',
+        name: 'Acelerando Tudo',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Descubra / catalogue 100 veículos e registre veículos nos aplicativos.',
+        itemIds: ['3a-1', '3b-1', 'c2-4b-4', 'c2-4b-5', 'c3-3b-1', 'c3-3b-2', 'c4-3b-1', 'c4-3b-2', 'c5-3a-1', 'c5-3a-3', 'c5-3a-4', 'c5-3a-5']
+      },
+      {
+        id: 'tr-gunslinger',
+        name: 'Pistoleiro Implacável',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Elimine 5 inimigos em um único uso do Foco de Combate.',
+        itemIds: ['c2-2b-1', 'c3-2a-5', 'c4-2a-3', 'c5-2a-3']
+      },
+      {
+        id: 'tr-hot-together',
+        name: 'Parceria Explosiva',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Alcance nível de procurado 4 estrelas com seu parceiro e despiste a polícia.',
+        itemIds: ['c2-1c-2', 'c2-1c-3', 'c4-4a-1']
+      },
+      {
+        id: 'tr-retail-therapy',
+        name: 'Terapia de Compras',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Assalte 3 lojas em sequência com seu parceiro sem perder o nível de procurado.',
+        itemIds: ['c3-4a-1', 'c3-4a-4']
+      },
+      {
+        id: 'tr-personal-best',
+        name: 'Recorde Pessoal',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Maximize a força / atributos da parceria entre Jason e Lucia.',
+        itemIds: ['1b-5', 'c5-3b-5']
+      },
+      {
+        id: 'tr-actions-speak-louder',
+        name: 'Atitudes Falam Mais Alto',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Realize escolhas e 500 ações que moldam o Perfil Criminal.',
+        itemIds: ['c2-1a-4', 'c5-1b-2']
+      },
+      {
+        id: 'tr-bad-luck-i-guess',
+        name: 'Azar do Destino',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Conclua os eventos/reveses e marcos de azar/sorte ao longo da campanha.',
+        itemIds: ['1a-4', 'c3-1b-3', 'c5-1a-3']
+      },
+      {
+        id: 'tr-the-truth-is-out-there',
+        name: 'A Verdade Está Lá Fora',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Investigue mistérios, curiosidades e ocorrências estranhas de Leonida.',
+        itemIds: ['4a-3', 'c3-1a-5', 'c5-2b-7']
+      },
+      {
+        id: 'tr-the-goodtime-state',
+        name: 'Estado da Boa Vida',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Explore todo o estado de Leonida até alcançar 100% do mapa.',
+        itemIds: ['2a-1', 'c2-3b-1', 'c3-4b-4', 'c4-4b-4', 'c5-3b-1']
+      },
+      {
+        id: 'tr-positive-mental-attitude',
+        name: 'Mentalidade Positiva',
+        grade: 'Bronze',
+        missable: true,
+        tip: 'Medite nos pontos de meditação de Leonida (atenção especial ao ponto da casa do Jason no Cap. 1).',
+        itemIds: ['2a-2', '2a-3', 'c2-3b-2', 'c2-3b-3', 'c2-3b-4', 'c3-2b-3', 'c3-2b-4', 'c3-2b-5', 'c4-2b-3', 'c4-2b-4', 'c4-2b-5', 'c5-2b-6', 'c5-4a-4']
+      },
+      {
+        id: 'tr-dont-touch-my-deck',
+        name: 'Não Mexa no Meu Baralho',
+        grade: 'Prata',
+        missable: false,
+        tip: 'Colete as cartas e conclua os conjuntos de cartas colecionáveis.',
+        itemIds: ['2b-1', '2b-2', '2b-3', 'c2-3a-1', 'c2-3a-2', 'c2-3a-3', 'c2-3a-4', 'c2-3a-5', 'c3-3a-1', 'c3-3a-2', 'c3-3a-3', 'c3-3a-4', 'c4-3a-1', 'c4-3a-2', 'c4-3a-3', 'c5-2b-1', 'c5-2b-2', 'c5-2b-3']
+      },
+      {
+        id: 'tr-you-wainker',
+        name: 'Viciado no WAiNK!',
+        grade: 'Prata',
+        missable: false,
+        tip: 'Escaneie / use o WAiNK em 100 locais, marcos, flamingos e tags.',
+        itemIds: ['2a-6', '2b-4', '2b-5', '2b-6', 'c2-3a-7', 'c2-3b-5', 'c3-3a-6', 'c3-3a-11', 'c4-3a-4', 'c4-3a-7', 'c5-2b-4', 'c5-2b-5']
+      },
+      {
+        id: 'tr-master-of-none',
+        name: 'Faz-Tudo de Leonida',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Experimente cada tipo de atividade ao menos uma vez (pesca, caça, tiro, fliperama, boliche, corridas, saltos).',
+        itemIds: ['2a-4', 'c2-2b-1', 'c2-2b-3', 'c2-2b-6', 'c2-2b-7', 'c3-2a-1', 'c5-4a-7']
+      },
+      {
+        id: 'tr-the-shootist',
+        name: 'O Atirador de Elite',
+        grade: 'Prata',
+        missable: false,
+        tip: 'Conquiste medalha de ouro em todos os desafios do estande de tiro.',
+        itemIds: ['c2-2b-1', 'c2-2b-2', 'c3-2a-5', 'c3-2a-6', 'c4-2a-3', 'c4-2a-4', 'c5-2a-3']
+      },
+      {
+        id: 'tr-top-fun',
+        name: 'Diversão nas Alturas',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Vença corridas de drone Top Fun em todos os locais.',
+        itemIds: ['c2-2b-5', 'c3-2a-4', 'c4-2a-2', 'c5-2a-2', 'c5-4a-3']
+      },
+      {
+        id: 'tr-earn-cash-not-kudos',
+        name: 'Dinheiro no Bolso, Não Só Elogios',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Vença 20 corridas diferentes entre ruas, terra e eventos.',
+        itemIds: ['c2-2b-3', 'c2-2b-4', 'c3-2a-3', 'c4-2a-1', 'c5-2a-1', 'c5-4a-2']
+      },
+      {
+        id: 'tr-cunning-stunts',
+        name: 'Acrobacias Radicais',
+        grade: 'Prata',
+        missable: false,
+        tip: 'Complete 250 acrobacias / saltos acrobáticos por Leonida.',
+        itemIds: ['2b-7', '2b-8', 'c5-4a-1']
+      },
+      {
+        id: 'tr-one-last-thing',
+        name: 'Só Mais Uma Coisinha',
+        grade: 'Bronze',
+        missable: false,
+        tip: 'Complete 50 desafios diversos ao longo da campanha e pós-jogo.',
+        itemIds: ['c2-2b-1', 'c3-2a-1', 'c4-2a-1', 'c5-4a-1']
+      },
+      {
+        id: 'tr-strangers-and-freaks',
+        name: 'Estranhos e Excêntricos',
+        grade: 'Prata',
+        missable: false,
+        tip: 'Conclua 8 arcos de missões de Estranhos & Doidos pelo estado de Leonida.',
+        itemIds: ['4a-1', '4a-2', '4a-3', 'c2-1d-1', 'c3-1c-1', 'c4-1c-1', 'c5-4a-1']
+      },
+      {
+        id: 'tr-you-gotta-know-when-to-get-off',
+        name: 'Saber a Hora de Parar',
+        grade: 'Ouro',
+        missable: false,
+        tip: 'Conclua a missão final e o epílogo de GTA VI.',
+        itemIds: ['c5-1a-1', 'c5-1a-2', 'c5-1a-3', 'c5-1a-4', 'c5-1b-1', 'c5-1b-2', 'c5-1b-3']
+      },
+      {
+        id: 'tr-a-long-road',
+        name: 'Uma Longa Estrada',
+        grade: 'Ouro',
+        missable: false,
+        tip: 'Atinja 100% de conclusão geral do roteiro, colecionáveis, desafios e marcos.',
+        itemIds: ['c5-2b-1', 'c5-2b-2', 'c5-2b-3', 'c5-2b-4', 'c5-2b-5', 'c5-2b-6', 'c5-2b-7', 'c5-3b-1', 'c5-3b-2', 'c5-3b-3', 'c5-3b-4', 'c5-3b-5', 'c5-4b-4', 'c5-4c-1', 'c5-4c-2', 'c5-4c-3']
+      },
+      {
+        id: 'tr-vice-got-a-price',
+        name: 'Vice Tem o Seu Preço!',
+        grade: 'Platina',
+        missable: false,
+        tip: 'Desbloqueie todos os troféus de Bronze, Prata e Ouro para conquistar a Platina.',
+        itemIds: ['c5-4b-1', 'c5-4b-2', 'c5-4b-3', 'c5-4b-4', 'c5-4b-5', 'c5-4c-3']
+      }
+    ];
+
+    /**
+     * Retorna a lista de troféus vinculados a um item específico.
+     */
+    function getTrophiesForItem(itemId) {
+      return LINKED_TROPHIES.filter((t) => t.itemIds.includes(itemId));
+    }
+
+    /**
+     * Calcula o progresso de um troféu com base nos itens vinculados.
+     */
+    function getTrophyProgress(trophy) {
+      const total = trophy.itemIds.length;
+      const done = trophy.itemIds.filter((id) => !!checkedState[id]).length;
+      const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+      return { total, done, pct, complete: total > 0 && done === total };
+    }
+
+    /**
+     * Localiza o texto de um item pelo ID para exibir o que falta no painel de troféus.
+     */
+    function getItemTextById(itemId) {
+      for (const ch of CHAPTERS_DATA) {
+        for (const col of ch.columns) {
+          for (const sec of col.sections) {
+            const found = sec.items.find((i) => i.id === itemId);
+            if (found) return found.text;
+          }
+        }
+      }
+      return itemId;
+    }
+
+    /**
+     * Renderiza o painel de troféus vinculados e atualiza o destaque bidirecional.
+     */
+    function renderTrophiesPanel() {
+      const panel = document.getElementById('trophies-linked-panel');
+      const grid = document.getElementById('trophies-linked-grid');
+      const badge = document.getElementById('trophies-summary-badge');
+      const clearBtn = document.getElementById('btn-clear-trophy-selection');
+
+      // Mantém o painel de troféus visível por padrão para acesso imediato
+      panel.classList.remove('hidden');
+      clearBtn.classList.toggle('hidden', !selectedTrophyId);
+
+      let completedTrophies = 0;
+      grid.innerHTML = '';
+
+      LINKED_TROPHIES.forEach((trophy) => {
+        const prog = getTrophyProgress(trophy);
+        if (prog.complete) completedTrophies++;
+
+        const isSelected = selectedTrophyId === trophy.id;
+        const missingItems = trophy.itemIds
+          .filter((id) => !checkedState[id])
+          .map((id) => getItemTextById(id));
+
+        const card = document.createElement('div');
+        card.className = `rounded-xl p-4 border cursor-pointer transition ${
+          isSelected
+            ? 'bg-pink-500/15 border-pink-400 shadow-[0_0_18px_rgba(236,72,153,0.3)]'
+            : 'bg-slate-900/75 border-slate-700/70 hover:border-amber-400/50'
+        }`;
+
+        card.innerHTML = `
+          <div class="flex items-start justify-between gap-2 mb-1.5">
+            <div>
+              <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 border border-amber-400/30">${trophy.grade}</span>
+              ${trophy.missable ? `<span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-rose-500/15 text-rose-300 border border-rose-400/35 ml-1">⏳ Perdível</span>` : ''}
+              <h3 class="font-display text-lg font-bold uppercase text-white mt-1">🏆 ${trophy.name}</h3>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded-full ${
+              prog.complete
+                ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-400/40'
+                : 'bg-slate-800 text-slate-300 border border-slate-700'
+            }">${prog.done}/${prog.total}</span>
+          </div>
+          <p class="text-xs text-slate-300 mb-2.5">${trophy.tip}</p>
+          <div class="w-full h-2 bg-slate-950 rounded-full overflow-hidden mb-2">
+            <div class="h-full rounded-full transition-all duration-300 ${
+              prog.complete ? 'bg-emerald-400' : 'bg-gradient-to-r from-amber-400 to-pink-500'
+            }" style="width: ${prog.pct}%"></div>
+          </div>
+          <div class="text-xs ${prog.complete ? 'text-emerald-300 font-semibold' : 'text-amber-200/90'}">
+            ${
+              prog.complete
+                ? '✓ Requisitos vinculados concluídos!'
+                : `Falta: ${missingItems.slice(0, 3).join(' • ')}${missingItems.length > 3 ? ` (+${missingItems.length - 3})` : ''}`
+            }
+          </div>
+        `;
+
+        card.addEventListener('click', () => {
+          selectedTrophyId = selectedTrophyId === trophy.id ? null : trophy.id;
+          renderAll();
+        });
+
+        grid.appendChild(card);
+      });
+
+      badge.textContent = `${completedTrophies} / ${LINKED_TROPHIES.length} concluídos`;
+    }
+
+    /**
+     * Carrega o estado salvo no localStorage e migra chaves antigas se necessário.
+     */
+    function loadState() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (parsed && typeof parsed === 'object') {
+            checkedState = parsed;
+            return;
+          }
+        }
+
+        const migrated = {};
+        PREV_STORAGE_KEYS.forEach((prevKey) => {
+          try {
+            const prevData = JSON.parse(localStorage.getItem(prevKey) || 'null');
+            if (prevData && typeof prevData === 'object') {
+              Object.assign(migrated, prevData);
+            }
+          } catch (_) {}
+        });
+
+        checkedState = {};
+        CHAPTERS_DATA.forEach((ch) => {
+          ch.columns.forEach((col) => {
+            col.sections.forEach((sec) => {
+              sec.items.forEach((item) => {
+                if (Object.prototype.hasOwnProperty.call(migrated, item.id)) {
+                  checkedState[item.id] = !!migrated[item.id];
+                } else {
+                  checkedState[item.id] = !!item.defaultChecked;
+                }
+              });
+            });
+          });
+        });
+        saveState();
+      } catch (e) {
+        console.error('Erro ao carregar progresso:', e);
+        resetToImageDefaults(false);
+      }
+    }
+
+    /**
+     * Persiste o estado atual do checklist no localStorage.
+     */
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(checkedState));
+      } catch (e) {
+        console.error('Erro ao salvar progresso:', e);
+      }
+    }
+
+    /**
+     * Restaura os valores padrão iniciais de cada item.
+     */
+    function resetToImageDefaults(shouldRender = true) {
+      checkedState = {};
+      CHAPTERS_DATA.forEach((ch) => {
+        ch.columns.forEach((col) => {
+          col.sections.forEach((sec) => {
+            sec.items.forEach((item) => {
+              checkedState[item.id] = !!item.defaultChecked;
+            });
+          });
+        });
+      });
+      saveState();
+      if (shouldRender) {
+        renderAll();
+        showToast('Estado inicial das imagens restaurado!');
+      }
+    }
+
+    /**
+     * Zera completamente todo o progresso (0%).
+     */
+    function resetAllToZero() {
+      checkedState = {};
+      CHAPTERS_DATA.forEach((ch) => {
+        ch.columns.forEach((col) => {
+          col.sections.forEach((sec) => {
+            sec.items.forEach((item) => {
+              checkedState[item.id] = false;
+            });
+          });
+        });
+      });
+      saveState();
+      renderAll();
+      showToast('Todo o progresso foi zerado (0%).');
+    }
+
+    /**
+     * Verifica se todas as seções indicadas estão 100% concluídas.
+     */
+    function areSectionsComplete(sectionIds) {
+      return sectionIds.every((secId) => {
+        for (const ch of CHAPTERS_DATA) {
+          for (const col of ch.columns) {
+            const sec = col.sections.find((s) => s.id === secId);
+            if (sec) {
+              return sec.items.every((item) => !!checkedState[item.id]);
+            }
+          }
+        }
+        return false;
+      });
+    }
+
+    /**
+     * Verifica se todos os capítulos indicados estão 100% concluídos.
+     */
+    function areChaptersComplete(chapterIds) {
+      return chapterIds.every((chId) => {
+        const ch = CHAPTERS_DATA.find((c) => c.id === chId);
+        if (!ch) return false;
+        return ch.columns.every((col) =>
+          col.sections.every((sec) =>
+            sec.items.every((item) => !!checkedState[item.id])
+          )
+        );
+      });
+    }
+
+    /**
+     * Abre o modal de referência visual com imagem e legenda.
+     */
+    function openImageModal(src, title, caption) {
+      const modal = document.getElementById('image-modal');
+      document.getElementById('image-modal-img').src = src;
+      document.getElementById('image-modal-title').textContent = title || 'Referência Visual';
+      document.getElementById('image-modal-caption').textContent = caption || '';
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    /**
+     * Renderiza os cartões de progresso individual para cada capítulo (1 a 5).
+     */
+    function renderChapterCards() {
+      const cardsWrap = document.getElementById('chapter-progress-cards');
+      cardsWrap.innerHTML = '';
+
+      CHAPTERS_DATA.forEach((ch) => {
+        let total = 0;
+        let done = 0;
+        ch.columns.forEach((col) => {
+          col.sections.forEach((sec) => {
+            sec.items.forEach((item) => {
+              total++;
+              if (checkedState[item.id]) done++;
+            });
+          });
+        });
+        const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
+        const card = document.createElement('div');
+        card.className = 'rounded-xl bg-slate-900/75 border border-slate-700/70 p-3';
+        card.innerHTML = `
+          <div class="flex items-center justify-between gap-2 text-xs mb-1.5">
+            <span class="font-bold uppercase ${ch.accentClass}">${ch.numberLabel}</span>
+            <span class="text-slate-300 font-semibold">${done}/${total} (${pct}%)</span>
+          </div>
+          <div class="text-xs text-slate-400 truncate mb-2">${ch.title}</div>
+          <div class="w-full h-2 bg-slate-950 rounded-full overflow-hidden">
+            <div class="h-full rounded-full bg-gradient-to-r ${ch.barClass} transition-all duration-300" style="width: ${pct}%"></div>
+          </div>
+        `;
+        cardsWrap.appendChild(card);
+      });
+    }
+
+    /**
+     * Renderiza os capítulos, colunas, seções e itens de acordo com filtros e busca.
+     */
+    function renderAll() {
+      const container = document.getElementById('chapters-container');
+      const emptyState = document.getElementById('empty-state');
+      container.innerHTML = '';
+
+      let totalVisibleItems = 0;
+
+      CHAPTERS_DATA.forEach((ch) => {
+        if (currentChapter !== 'all' && currentChapter !== ch.id) return;
+
+        let chTotal = 0;
+        let chDone = 0;
+        ch.columns.forEach((col) => {
+          col.sections.forEach((sec) => {
+            sec.items.forEach((item) => {
+              chTotal++;
+              if (checkedState[item.id]) chDone++;
+            });
+          });
+        });
+        const chPct = chTotal > 0 ? Math.round((chDone / chTotal) * 100) : 0;
+
+        const chapterBlock = document.createElement('section');
+        chapterBlock.className = 'space-y-4';
+
+        const banner = document.createElement('div');
+        banner.className = 'vice-card rounded-2xl px-4 sm:px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border border-pink-500/30';
+        banner.innerHTML = `
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest ${ch.accentClass}">${ch.numberLabel}</span>
+            <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase text-white tracking-wide">${ch.title}</h2>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-sm font-semibold text-slate-200">${chDone} / ${chTotal} concluídos</span>
+            <span class="px-3 py-1 rounded-full bg-slate-900/90 border border-cyan-400/40 font-display text-lg font-bold ${ch.accentClass}">${chPct}%</span>
+          </div>
+        `;
+        chapterBlock.appendChild(banner);
+
+        const grid = document.createElement('div');
+        grid.className = 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 items-start';
+
+        let chapterHasVisible = false;
+
+        ch.columns.forEach((colData) => {
+          const colEl = document.createElement('div');
+          colEl.className = 'vice-card rounded-2xl p-4 sm:p-5 flex flex-col gap-6 transition-all';
+          let colHasVisible = false;
+
+          colData.sections.forEach((section) => {
+            if (currentFilter === 'missable' && !section.isMissable) return;
+
+            const secTotal = section.items.length;
+            const secCompleted = section.items.filter((i) => !!checkedState[i.id]).length;
+            const secPercent = secTotal > 0 ? Math.round((secCompleted / secTotal) * 100) : 0;
+
+            const filteredItems = section.items.filter((item) => {
+              const isChecked = !!checkedState[item.id];
+              const itemTrophies = getTrophiesForItem(item.id);
+
+              if (currentFilter === 'pending' && isChecked) return false;
+              if (currentFilter === 'completed' && !isChecked) return false;
+              if (currentFilter === 'trophies' && itemTrophies.length === 0) return false;
+
+              if (selectedTrophyId) {
+                const activeTrophy = LINKED_TROPHIES.find((t) => t.id === selectedTrophyId);
+                if (activeTrophy && !activeTrophy.itemIds.includes(item.id)) return false;
+              }
+
+              if (searchQuery.trim() !== '') {
+                const q = searchQuery.toLowerCase();
+                const matchText = item.text.toLowerCase().includes(q);
+                const matchSec = section.title.toLowerCase().includes(q);
+                const matchCh = `${ch.numberLabel} ${ch.title}`.toLowerCase().includes(q);
+                const matchTrophy = itemTrophies.some((t) => t.name.toLowerCase().includes(q));
+                if (!matchText && !matchSec && !matchCh && !matchTrophy) return false;
+              }
+              return true;
+            });
+
+            if (filteredItems.length === 0) return;
+            colHasVisible = true;
+            chapterHasVisible = true;
+            totalVisibleItems += filteredItems.length;
+
+            const secEl = document.createElement('div');
+            secEl.className = 'flex flex-col';
+
+            const alertText = section.missableLabel || 'Atenção: Tarefa perdível antes da virada de capítulo';
+
+            secEl.innerHTML = `
+              <div class="mb-2.5">
+                <div class="flex items-start justify-between gap-2">
+                  <h3 class="font-display text-lg sm:text-xl font-bold uppercase tracking-wide leading-snug ${section.isMissable ? 'text-amber-300' : 'neon-title-cyan'}">
+                    ${section.title}
+                  </h3>
+                  <span class="text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-900/90 border border-slate-700/80 text-slate-300 whitespace-nowrap mt-0.5">
+                    ${secCompleted}/${secTotal}
+                  </span>
+                </div>
+                ${section.isMissable ? `
+                  <div class="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-amber-500/15 border border-amber-500/40 text-amber-300 text-[11px] font-semibold uppercase tracking-wider">
+                    ⏳ ${alertText}
+                  </div>
+                ` : ''}
+                <div class="w-full h-1.5 bg-slate-900/90 rounded-full overflow-hidden mt-2">
+                  <div class="h-full rounded-full transition-all duration-300 ${secPercent === 100 ? 'bg-emerald-400' : section.isMissable ? 'bg-gradient-to-r from-amber-400 to-rose-500' : 'bg-gradient-to-r from-cyan-400 to-pink-500'}" style="width: ${secPercent}%"></div>
+                </div>
+              </div>
+            `;
+
+            const listEl = document.createElement('ul');
+            listEl.className = 'space-y-1.5';
+
+            filteredItems.forEach((item) => {
+              const isChecked = !!checkedState[item.id];
+              const itemTrophies = getTrophiesForItem(item.id);
+              const li = document.createElement('li');
+
+              let linkedBadge = '';
+              if (item.linkedChapters) {
+                const allChDone = areChaptersComplete(item.linkedChapters);
+                linkedBadge = allChDone
+                  ? `<span class="ml-auto shrink-0 text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Pronto!</span>`
+                  : `<span class="ml-auto shrink-0 text-[10px] font-medium uppercase px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700">Pendente</span>`;
+              } else if (item.linkedSections) {
+                const allLinkedDone = areSectionsComplete(item.linkedSections);
+                linkedBadge = allLinkedDone
+                  ? `<span class="ml-auto shrink-0 text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Pronto!</span>`
+                  : `<span class="ml-auto shrink-0 text-[10px] font-medium uppercase px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700">Pendente</span>`;
+              }
+
+              const refLinkHtml = item.refUrl
+                ? `<a href="${item.refUrl}" target="_blank" rel="noopener noreferrer" class="text-[11px] text-cyan-300 hover:underline ml-7 inline-block mt-0.5">${item.refLabel || 'Abrir referência'} ↗</a>`
+                : '';
+
+              const refImgBtnHtml = item.refImage
+                ? `<button type="button" data-img="${item.refImage}" data-title="${item.text}" data-caption="${item.refCaption || ''}" class="view-ref-img text-[11px] text-pink-300 hover:underline ml-3 inline-block mt-0.5 cursor-pointer">Ver imagem</button>`
+                : '';
+
+              const trophyBadgesHtml = itemTrophies.length > 0
+                ? `<div class="flex flex-wrap gap-1.5 mt-1.5 ml-7">${itemTrophies.map((t) => {
+                    const isHighlighted = selectedTrophyId === t.id;
+                    return `<button type="button" data-trophy-id="${t.id}" class="item-trophy-btn inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold border cursor-pointer transition ${
+                      isHighlighted
+                        ? 'bg-amber-400 text-slate-950 border-amber-200'
+                        : 'bg-amber-500/15 text-amber-200 border-amber-400/35 hover:bg-amber-500/25'
+                    }">🏆 ${t.name}</button>`;
+                  }).join('')}</div>`
+                : '';
+
+              li.innerHTML = `
+                <label class="group flex items-center gap-3 p-2.5 rounded-xl cursor-pointer transition-all select-none border ${
+                  isChecked
+                    ? 'bg-pink-500/10 border-pink-500/25 hover:bg-pink-500/15'
+                    : section.isMissable
+                      ? 'bg-amber-950/20 border-amber-500/20 hover:bg-amber-900/30 hover:border-amber-400/50'
+                      : 'bg-slate-900/45 border-transparent hover:bg-slate-800/70 hover:border-cyan-500/30'
+                }">
+                  <input
+                    type="checkbox"
+                    class="custom-checkbox"
+                    data-id="${item.id}"
+                    ${isChecked ? 'checked' : ''}
+                  />
+                  <span class="text-sm sm:text-[15px] leading-snug transition-all ${
+                    isChecked
+                      ? 'line-through text-slate-400 decoration-pink-400/70'
+                      : 'text-slate-100 group-hover:text-white font-medium'
+                  }">
+                    ${item.text}
+                  </span>
+                  ${linkedBadge}
+                </label>
+                ${trophyBadgesHtml}
+                ${(refLinkHtml || refImgBtnHtml) ? `<div>${refLinkHtml}${refImgBtnHtml}</div>` : ''}
+              `;
+
+              const checkbox = li.querySelector('input[type="checkbox"]');
+              checkbox.addEventListener('change', (e) => {
+                checkedState[item.id] = e.target.checked;
+                saveState();
+                renderAll();
+              });
+
+              li.querySelectorAll('.item-trophy-btn').forEach((tBtn) => {
+                tBtn.addEventListener('click', () => {
+                  const tid = tBtn.dataset.trophyId;
+                  selectedTrophyId = selectedTrophyId === tid ? null : tid;
+                  renderAll();
+                });
+              });
+
+              const imgBtn = li.querySelector('.view-ref-img');
+              if (imgBtn) {
+                imgBtn.addEventListener('click', () => {
+                  openImageModal(imgBtn.dataset.img, imgBtn.dataset.title, imgBtn.dataset.caption);
+                });
+              }
+
+              listEl.appendChild(li);
+            });
+
+            secEl.appendChild(listEl);
+            colEl.appendChild(secEl);
+          });
+
+          if (colHasVisible) grid.appendChild(colEl);
+        });
+
+        if (chapterHasVisible) {
+          chapterBlock.appendChild(grid);
+          container.appendChild(chapterBlock);
+        }
+      });
+
+      if (totalVisibleItems === 0) {
+        container.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+      } else {
+        container.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+      }
+
+      updateGlobalProgress();
+      renderChapterCards();
+      renderTrophiesPanel();
+    }
+
+    /**
+     * Atualiza a barra de progresso global e a porcentagem total.
+     */
+    function updateGlobalProgress() {
+      let total = 0;
+      let completed = 0;
+
+      CHAPTERS_DATA.forEach((ch) => {
+        ch.columns.forEach((col) => {
+          col.sections.forEach((sec) => {
+            sec.items.forEach((item) => {
+              total++;
+              if (checkedState[item.id]) completed++;
+            });
+          });
+        });
+      });
+
+      const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+      document.getElementById('global-count').textContent = `${completed} / ${total} concluídos`;
+      document.getElementById('global-percent').textContent = `${percent}%`;
+      document.getElementById('global-progress-bar').style.width = `${percent}%`;
+      document.getElementById('badge-complete').classList.toggle('hidden', percent !== 100);
+    }
+
+    let toastTimeout;
+    /**
+     * Exibe um aviso temporário no canto inferior direito.
+     */
+    function showToast(message, isError = false) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-msg');
+      const toastIcon = document.getElementById('toast-icon');
+
+      toastMsg.textContent = message;
+      toastIcon.textContent = isError ? '⚠' : '✓';
+      toastIcon.className = isError ? 'text-rose-400 font-bold' : 'text-cyan-400 font-bold';
+
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3200);
+    }
+
+    /**
+     * Carrega a logo do criador com fallback automático caso o arquivo não exista.
+     */
+    function loadLogo() {
+      const img = document.getElementById('creator-logo-img');
+      const fallback = document.getElementById('creator-logo-fallback');
+      if (!img || !fallback) return;
+
+      img.onerror = () => {
+        img.classList.add('hidden');
+        fallback.classList.remove('hidden');
+      };
+      img.src = DEFAULT_LOGO_PATH;
+    }
+
+    /**
+     * Exporta o progresso atual para um arquivo JSON.
+     */
+    function exportBackup() {
+      try {
+        const backupData = {
+          game: 'GTA VI - Roteiro 100% Completo (Capítulos 1 a 5)',
+          exportedAt: new Date().toISOString(),
+          progress: checkedState
+        };
+        const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `gtavi-cap1-a-5-backup-${new Date().toISOString().slice(0, 10)}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast('Backup JSON exportado com sucesso!');
+      } catch (err) {
+        showToast('Erro ao exportar backup JSON.', true);
+      }
+    }
+
+    /**
+     * Importa e aplica um arquivo JSON de backup.
+     */
+    function importBackup(file) {
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          const importedProgress = parsed.progress || parsed;
+          if (typeof importedProgress !== 'object' || importedProgress === null) {
+            throw new Error('Formato inválido');
+          }
+          CHAPTERS_DATA.forEach((ch) => {
+            ch.columns.forEach((col) => {
+              col.sections.forEach((sec) => {
+                sec.items.forEach((item) => {
+                  if (item.id in importedProgress) {
+                    checkedState[item.id] = !!importedProgress[item.id];
+                  }
+                });
+              });
+            });
+          });
+          saveState();
+          renderAll();
+          showToast('Progresso restaurado do arquivo de backup!');
+        } catch (err) {
+          showToast('Erro ao importar: arquivo JSON inválido.', true);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadLogo();
+      loadState();
+      renderAll();
+
+      const imgModal = document.getElementById('image-modal');
+      const closeImgModal = () => {
+        imgModal.classList.add('hidden');
+        imgModal.classList.remove('flex');
+      };
+      document.getElementById('close-image-modal').addEventListener('click', closeImgModal);
+      imgModal.addEventListener('click', (e) => {
+        if (e.target === imgModal) closeImgModal();
+      });
+
+      const chBtns = document.querySelectorAll('.ch-btn');
+      chBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          chBtns.forEach((b) => {
+            b.classList.remove('bg-pink-500/25', 'text-pink-200', 'border-pink-500/50');
+            b.classList.add('bg-slate-900/80', 'text-slate-300', 'border-slate-700/80');
+          });
+          btn.classList.remove('bg-slate-900/80', 'text-slate-300', 'border-slate-700/80');
+          btn.classList.add('bg-pink-500/25', 'text-pink-200', 'border-pink-500/50');
+          currentChapter = btn.dataset.chapter;
+          renderAll();
+        });
+      });
+
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach((b) => {
+            b.classList.remove('active', 'bg-cyan-500/20', 'text-cyan-300', 'border-cyan-500/40', 'bg-amber-500/20', 'text-amber-300', 'border-amber-500/40', 'bg-purple-500/20', 'text-purple-200', 'border-purple-400/40');
+            if (b.dataset.filter === 'missable') {
+              b.classList.add('text-amber-300/85', 'border-transparent');
+            } else if (b.dataset.filter === 'trophies') {
+              b.classList.add('text-purple-300/90', 'border-transparent');
+            } else {
+              b.classList.add('text-slate-400', 'border-transparent');
+            }
+          });
+          if (btn.dataset.filter === 'missable') {
+            btn.classList.add('active', 'bg-amber-500/20', 'text-amber-300', 'border-amber-500/40');
+            btn.classList.remove('text-amber-300/85', 'border-transparent');
+          } else if (btn.dataset.filter === 'trophies') {
+            btn.classList.add('active', 'bg-purple-500/20', 'text-purple-200', 'border-purple-400/40');
+            btn.classList.remove('text-purple-300/90', 'border-transparent');
+          } else {
+            btn.classList.add('active', 'bg-cyan-500/20', 'text-cyan-300', 'border-cyan-500/40');
+            btn.classList.remove('text-slate-400', 'border-transparent');
+          }
+          currentFilter = btn.dataset.filter;
+          renderAll();
+        });
+      });
+
+      const searchInput = document.getElementById('search-input');
+      const clearSearchBtn = document.getElementById('clear-search');
+
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        clearSearchBtn.classList.toggle('hidden', searchQuery === '');
+        renderAll();
+      });
+
+      document.getElementById('btn-clear-trophy-selection').addEventListener('click', () => {
+        selectedTrophyId = null;
+        renderAll();
+      });
+
+      clearSearchBtn.addEventListener('click', () => {
+        searchQuery = '';
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        renderAll();
+      });
+
+      document.getElementById('btn-clear-filters').addEventListener('click', () => {
+        searchQuery = '';
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        currentFilter = 'all';
+        currentChapter = 'all';
+        selectedTrophyId = null;
+        filterBtns.forEach((b) => {
+          const isAll = b.dataset.filter === 'all';
+          b.classList.remove('active', 'bg-cyan-500/20', 'text-cyan-300', 'border-cyan-500/40', 'bg-amber-500/20', 'text-amber-300', 'border-amber-500/40', 'bg-purple-500/20', 'text-purple-200', 'border-purple-400/40', 'text-slate-400', 'text-amber-300/85', 'text-purple-300/90', 'border-transparent');
+          if (isAll) {
+            b.classList.add('active', 'bg-cyan-500/20', 'text-cyan-300', 'border-cyan-500/40');
+          } else if (b.dataset.filter === 'missable') {
+            b.classList.add('text-amber-300/85', 'border-transparent');
+          } else if (b.dataset.filter === 'trophies') {
+            b.classList.add('text-purple-300/90', 'border-transparent');
+          } else {
+            b.classList.add('text-slate-400', 'border-transparent');
+          }
+        });
+        chBtns.forEach((b) => {
+          const isAllCh = b.dataset.chapter === 'all';
+          b.classList.toggle('bg-pink-500/25', isAllCh);
+          b.classList.toggle('text-pink-200', isAllCh);
+          b.classList.toggle('border-pink-500/50', isAllCh);
+          b.classList.toggle('bg-slate-900/80', !isAllCh);
+          b.classList.toggle('text-slate-300', !isAllCh);
+          b.classList.toggle('border-slate-700/80', !isAllCh);
+        });
+        renderAll();
+      });
+
+      document.getElementById('btn-export').addEventListener('click', exportBackup);
+      document.getElementById('input-import').addEventListener('change', (e) => {
+        importBackup(e.target.files[0]);
+        e.target.value = '';
+      });
+
+      const resetModal = document.getElementById('reset-modal');
+      document.getElementById('btn-reset-modal').addEventListener('click', () => {
+        resetModal.classList.remove('hidden');
+        resetModal.classList.add('flex');
+      });
+
+      const closeModal = () => {
+        resetModal.classList.add('hidden');
+        resetModal.classList.remove('flex');
+      };
+
+      document.getElementById('cancel-reset').addEventListener('click', closeModal);
+      resetModal.addEventListener('click', (e) => {
+        if (e.target === resetModal) closeModal();
+      });
+
+      document.getElementById('confirm-reset-zero').addEventListener('click', () => {
+        resetAllToZero();
+        closeModal();
+      });
+
+      document.getElementById('confirm-reset-image').addEventListener('click', () => {
+        resetToImageDefaults(true);
+        closeModal();
+      });
+    });
+  </script>
+</body>
+</html>
